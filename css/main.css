@@ -222,8 +222,8 @@ button, input, select, textarea {
 .chart-image .resize {
     display: inline-block;
     position: fixed;
-    right: 0;
-    top: 12px;
+    left: 38%;
+    top: 125px;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -385,7 +385,7 @@ button, input, select, textarea {
 }
 
 /* PDF Object */
-.pdfobject-container { height: 500px;}
+.pdfobject-container { height: 580px;}
 .pdfobject { border: 1px solid #666; }
 
 
