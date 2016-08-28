@@ -6,4 +6,8 @@ $( function() {
     $('.dropdown')
         .dropdown()
     ;
+
+    $('.ui.checkbox')
+        .checkbox()
+    ;
 } );

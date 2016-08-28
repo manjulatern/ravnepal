@@ -202,13 +202,22 @@ button, input, select, textarea {
     width:60%;
     float:right;
     margin-top:-10px;
+    display: inline-block;
 }
 
-.chart-image {
+/*.chart-image {
     width:40%;
     height:0px;
     margin-top:10px;
 
+}*/
+
+.chart-image {
+    width: 30%;
+    display: inline-block;
+    margin-top: 10px;
+    float: left;
+    position: fixed;
 }
 
 .chart-image h2 {
@@ -389,13 +398,13 @@ button, input, select, textarea {
 .pdfobject { border: 1px solid #666; }
 
 
-.card-container{
+/*.card-container{
     overflow-x: auto;
     min-height: .01%;
     border: 0;
     max-height: f600px;
     margin-bottom: 12px;
-}
+}*/
 .card-body input[type="text"] {
     display: block;
     padding-left: 7px;
@@ -452,7 +461,7 @@ button, input, select, textarea {
 }
 
 .card .card-header {
-    cursor: all-scroll;
+    /*cursor: all-scroll;*/
     margin: 0;
     background: #0cc2aa;
     padding: 10px 15px;
@@ -494,7 +503,7 @@ button, input, select, textarea {
     overflow-x: auto;
     min-height: .01%;
     border: 0;
-    max-height: 300px;
+    max-height: 450px;
     overflow-x: auto;
     margin-top: 0px;
 }
@@ -576,7 +585,17 @@ button.icon {
     border: 0;
     width: 25px;
     height: 25px;
+    margin-right: 5px;
     border-radius: 50%;
+}
+
+button.icon:last-child {
+    margin-right: 0;
+}
+
+button.icon .fa {
+    color: #0cc2aa;
+    font-size: 14px;
 }
 
 button.icon [class^="icon-"],
@@ -590,7 +609,7 @@ button.icon [class*=" icon-"] {
     padding: 0 10px;
     margin: 0 auto;
     overflow: hidden;
-    position: relative;
+    /*position: relative;*/
 }
 
 .view .btn {
@@ -615,7 +634,7 @@ button.icon [class*=" icon-"] {
 }
 
 .card-container .ui.styled.accordion .active.title {
-    background: #f4f6ff;
+    background: #e3fffb;
 }
 
 .card-container .ui.styled.accordion .content {
@@ -664,10 +683,138 @@ button.icon [class*=" icon-"] {
     background-color: #2ecc71!important;
 }
 
-.claim-wrap .ui.toggle.checkbox input:checked~label:after ,
-.cpt-wrap .ui.toggle.checkbox input:checked~label:after {
+.claim-wrap .ui.toggle.checkbox input:checked ~ label:after,
+.cpt-wrap .ui.toggle.checkbox input:checked ~ label:after {
     left: 25px;
 }
+
+.fullscreen .chart-image {
+    display: none;
+}
+
+.fullscreen .coding{
+    width: 100%;
+}
+
+.fullscreen .profile-member-block .card > div:nth-child(1) > * {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 15px;
+}
+
+.fullscreen .list-section {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+}
+
+.fullscreen .table-chart-container .table-card-wrapper .ui.card.claim {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    box-shadow: none;
+}
+
+.fullscreen .table-chart-container .table-card-wrapper .ui.card.claim > .content {
+      box-shadow: 0px 1px 1px 1px #b1b1b1 !important;
+    border-radius: 0!important;
+  }
+
+.fullscreen .table-chart-container .table-card-wrapper .ui.accordion.claim .title:not(.ui) {
+    padding: 0;
+}
+
+
+.fullscreen .ui.accordion.claim .add-row {
+    position: absolute;
+    top: 4px;
+    right: -15px;
+    padding: 0;
+    border: none;
+}
+
+.fullscreen .ui.accordion.claim .add-row .btn {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    background: #5e5e5e;
+}
+
+.fullscreen .ui.accordion.claim .add-row .btn [class^="icon-"],
+.fullscreen .ui.accordion.claim .add-row .btn [class*=" icon-"] {
+    margin-right: 0;
+}
+
+.fullscreen .table-card-wrapper .completion-section {
+    padding: 10px 30px;
+}
+.fullscreen .card-container .ui.styled.accordion .content {
+    padding: 0;
+}
+
+.fullscreen .table-responsive {
+    max-height: 500px;
+}
+.add-section {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.add-section .add {
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.add-section .add:last-child {
+    margin-right: 0;
+}
+
+.add-section .btn {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.add-section .btn [class^="icon-"],
+.add-section .btn [class*=" icon-"] {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.add-section .status-wrap {
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.status-wrap .ui.checkbox label {
+    font-size: 12px;
+    padding-right: 1.85714em;
+    padding-left: 0;
+}
+
+.status-wrap .ui.checkbox label:before,
+.status-wrap .ui.checkbox label:after {
+    right: 0;
+    left: auto;
+}
+
+.status-wrap .ui.dropdown .menu {
+    border-radius: 0;
+}
+
+.status-wrap .ui.dropdown .menu > .item {
+    font-size: 14px;
+    border-bottom: 1px solid #dedede;
+}
+
+.claim-inner {
+    position: relative;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
