@@ -201,23 +201,15 @@ button, input, select, textarea {
 .coding {
     width:60%;
     float:right;
-    margin-top:-10px;
+    margin-top:10px;
     display: inline-block;
 }
 
-/*.chart-image {
-    width:40%;
-    height:0px;
-    margin-top:10px;
-
-}*/
-
 .chart-image {
-    width: 30%;
+    width: 40%;
     display: inline-block;
     margin-top: 10px;
     float: left;
-    position: fixed;
 }
 
 .chart-image h2 {
@@ -230,9 +222,9 @@ button, input, select, textarea {
 
 .chart-image .resize {
     display: inline-block;
-    position: fixed;
-    left: 38%;
-    top: 125px;
+    position: absolute;
+    right: 0;
+    top: 15px;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -306,6 +298,10 @@ button, input, select, textarea {
     padding: 0 0 0 20px;
 }
 
+.profile-member-block {
+    margin-top: 0;
+}
+
 .table-chart-container {
     padding-bottom: 30px;
 }
@@ -351,16 +347,6 @@ button, input, select, textarea {
     padding: 15px 20px 20px;
     overflow: hidden;
     position: relative;
-}
-
-.profile-member-block .card > div:nth-child(1) {
-    width: 70%;
-    float: left;
-}
-
-.profile-member-block .card > div:nth-child(2) {
-    width: 30%;
-    float: left;
 }
 
 .list-section {
@@ -575,6 +561,11 @@ pre code, table {
     font-size: 14px;
 }
 
+.add-row .ui.bottom.right.popup,
+.edit-row .ui.bottom.right.popup {
+    width: 500px !important;
+}
+
 .coder-list-container {
     max-width: 1200px;
     margin: 30px auto 0;
@@ -628,7 +619,7 @@ button.icon [class*=" icon-"] {
 }
 
 .card-container .title h2 {
-    font-size: 16px;
+    font-size: 14px;
     display: inline-block;
     margin: 0;
 }
@@ -649,29 +640,42 @@ button.icon [class*=" icon-"] {
     background: #eaeaea;
 }
 
-.claim-wrap .ui.toggle.checkbox,
-.cpt-wrap .ui.toggle.checkbox{
-    margin-top: 6px;
+.add-section .ui.toggle.checkbox {
+    float: left;
+    margin-top: 4px;
+}
+
+.add-section .reviewed {
+    float: left;
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 14px;
 }
 
 .claim-wrap .ui.toggle.checkbox label:after ,
+.add-section .ui.toggle.checkbox label:after ,
 .cpt-wrap .ui.toggle.checkbox label:after {
     width: 20px;
     height: 20px;
 }
 
 .claim-wrap .ui.toggle.checkbox input ,
+.add-section .ui.toggle.checkbox input ,
 .cpt-wrap .ui.toggle.checkbox input {
     width: 40px;
     height: 20px;
 }
 
 .claim-wrap .ui.toggle.checkbox label ,
+.add-section .ui.toggle.checkbox label ,
 .cpt-wrap .ui.toggle.checkbox label {
     padding-left: 50px;
 }
 
 .claim-wrap .ui.toggle.checkbox label:before ,
+.add-section .ui.toggle.checkbox label:before ,
 .cpt-wrap .ui.toggle.checkbox label:before {
     background: #e74c3c !important;
     width: 40px;
@@ -679,11 +683,13 @@ button.icon [class*=" icon-"] {
 }
 
 .claim-wrap .ui.toggle.checkbox input:checked~label:before ,
+.add-section .ui.toggle.checkbox input:checked~label:before ,
 .cpt-wrap .ui.toggle.checkbox input:checked~label:before {
     background-color: #2ecc71!important;
 }
 
 .claim-wrap .ui.toggle.checkbox input:checked ~ label:after,
+.add-section .ui.toggle.checkbox input:checked ~ label:after,
 .cpt-wrap .ui.toggle.checkbox input:checked ~ label:after {
     left: 25px;
 }
@@ -694,9 +700,20 @@ button.icon [class*=" icon-"] {
 
 .fullscreen .coding{
     width: 100%;
+    float: none;
+    margin-top: 10px;
 }
 
-.fullscreen .profile-member-block .card > div:nth-child(1) > * {
+.fullscreen .profile-member-block {
+    margin: 0 auto;
+}
+
+.profile-member-block .card .member-title {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.profile-member-block .card > div:nth-child(1) > * {
     display: inline-block;
     margin-bottom: 0;
     margin-right: 15px;
@@ -725,7 +742,8 @@ button.icon [class*=" icon-"] {
 }
 
 
-.fullscreen .ui.accordion.claim .add-row {
+.fullscreen .ui.accordion.claim .add-row,
+.card-header .add-row {
     position: absolute;
     top: 4px;
     right: -15px;
@@ -742,8 +760,27 @@ button.icon [class*=" icon-"] {
 }
 
 .fullscreen .ui.accordion.claim .add-row .btn [class^="icon-"],
-.fullscreen .ui.accordion.claim .add-row .btn [class*=" icon-"] {
+.fullscreen .ui.accordion.claim .add-row .btn [class*=" icon-"]{
     margin-right: 0;
+}
+
+.card-header .add-row {
+    right: -10px;
+    top: 5px;
+}
+
+.card-header .add-row .btn {
+    background: #5e5e5e;
+    border-radius: 6px;
+    padding: 7px 10px;
+    color: #fff;
+    font-weight: normal;
+    margin-right: 0;
+}
+
+.card-header .add-row .btn [class^="icon-"], [class*=" icon-"] {
+    margin-right: 3px;
+    font-size: 10px;
 }
 
 .fullscreen .table-card-wrapper .completion-section {
@@ -759,28 +796,35 @@ button.icon [class*=" icon-"] {
 .add-section {
     position: absolute;
     top: 7px;
-    right: 10px;
+    right: -10px;
 }
 
-.add-section .add {
+.add-section .edit-row {
     float: left;
     display: inline-block;
-    margin-right: 10px;
 }
 
-.add-section .add:last-child {
-    margin-right: 0;
-}
 
 .add-section .btn {
-    font-size: 14px;
+    background: #5e5e5e;
+    border-radius: 6px;
     padding: 5px 10px;
+    font-size: 14px;
+    margin-right: 0;
+    color: #fff;
+    font-weight: normal;
+}
+
+.add-section .ui.button:hover
+.add-section .ui.button:focus {
+    background-color: #5e5e5e;
+    color: #fff;
 }
 
 .add-section .btn [class^="icon-"],
 .add-section .btn [class*=" icon-"] {
-    font-size: 12px;
-    margin-right: 5px;
+    margin-right: 7px;
+    font-size: 10px;
 }
 
 .add-section .status-wrap {
@@ -812,6 +856,10 @@ button.icon [class*=" icon-"] {
 
 .claim-inner {
     position: relative;
+}
+
+.claim-wrapper {
+    display: none;
 }
 
 
