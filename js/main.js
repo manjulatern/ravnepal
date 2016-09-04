@@ -18,4 +18,9 @@ $( function() {
             on    : 'click'
         })
     ;
+
+    $( ".show-message" ).on( "click", function() {
+        console.log('Hey');
+        $( ".inline-message" ).toggleClass("is-visible");
+    });
 } );

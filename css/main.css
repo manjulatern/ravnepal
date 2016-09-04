@@ -409,6 +409,7 @@ button, input, select, textarea {
     max-height: f600px;
     margin-bottom: 12px;
 }*/
+
 .card-body input[type="text"] {
     display: block;
     padding-left: 7px;
@@ -419,8 +420,28 @@ button, input, select, textarea {
     border-radius: 4px;
 }
 
+.inline-message {
+    display: none;
+}
+
+.inline-message.is-visible {
+    display: table-row;
+}
+
+.card-body .inline-message input[type="text"]{
+    width: 100%;
+}
+
+.inline-message td {
+    background: #d3d3d3;
+}
+
 .table-card-wrapper .completion-section {
     overflow: hidden;
+}
+
+.completion-section{
+    margin-top: 20px;
 }
 
 .completion-section > div:nth-child(1) {
@@ -902,6 +923,18 @@ button.icon [class*=" icon-"] {
 
 .claim-wrapper {
     display: none;
+}
+
+.light-yellow {
+    background: #fff5d6 !important;
+}
+
+.light-red {
+    background: #ffdede !important;
+}
+
+.light-green {
+    background: #e2ffeb !important;
 }
 
 /* ==========================================================================
