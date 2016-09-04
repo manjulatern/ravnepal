@@ -161,7 +161,6 @@
                                 <div class="add-row">
                                     <button class="btn btn-info ui button">
                                         <span class="icon-plus"></span>
-                                        Claim
                                     </button>
                                     <div class="ui fluid popup top left transition hidden">
                                         <div class="ui column divided grid">
@@ -192,7 +191,7 @@
                                     <div class="claim-inner">
                                     <div class="active title">
                                         <i class="dropdown icon"></i>
-                                        <h2>Claim ID: 111111 | DX Code
+                                        <h2>Claim ID: 111111 |
                                             <small> DOS: 01/01/2016 | Coding Date: 01/20/2016 </small>
                                         </h2>
                                     </div>
@@ -238,6 +237,9 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -256,6 +258,9 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -269,10 +274,14 @@
                                                         <input type="checkbox" name="public">
                                                         <label></label>
                                                     </div>
+
                                                 </td>
                                                 <td class="text-left">
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
+                                                    </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
                                                     </button>
                                                 </td>
                                             </tr>
@@ -292,6 +301,9 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -309,6 +321,9 @@
                                                 <td class="text-left">
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
+                                                    </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
                                                     </button>
                                                 </td>
                                             </tr>
@@ -328,6 +343,9 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -345,6 +363,9 @@
                                                 <td class="text-left">
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
+                                                    </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
                                                     </button>
                                                 </td>
                                             </tr>
@@ -364,13 +385,17 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>9</td>
-                                                <td><select class="dxcode" style="width:112px;">
+                                                <td>
+                                                    <select class="dxcode" style="width:112px;">
                                                     <!-- Dropdown List Option -->
-                                                </select>
+                                                    </select>
                                                 </td>
                                                 <td><select class="description" style="width:112px;">
                                                     <!-- Dropdown List Option -->
@@ -382,10 +407,6 @@
                                                 </select>
                                                 </td>
                                                 <td>
-                                                    <div class="ui toggle checkbox">
-                                                        <input type="checkbox" name="public">
-                                                        <label></label>
-                                                    </div>
                                                 </td>
                                                 <td class="text-left">
                                                     <button type="button" class="icon" title="Edit">
@@ -406,6 +427,9 @@
                                                 <tr>
                                                     <th>#</th>
                                                     <th>
+                                                        DX Code
+                                                    </th>
+                                                    <th>
                                                         CPT Code
 
                                                     </th>
@@ -419,6 +443,7 @@
                                                 <tbody>
                                                 <tr>
                                                     <td>1</td>
+                                                    <td>A0222</td>
                                                     <td>0001F</td>
                                                     <td>Heart Failure Composite</td>
                                                     <td>
@@ -431,23 +456,28 @@
                                                         <button type="button" class="icon" title="Edit">
                                                             <span class="icon-remark"></span>
                                                         </button>
+                                                        <button type="button" class="icon" title="remark">
+                                                            <i class="fa fa-list" aria-hidden="true"></i>
+                                                        </button>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>2</td>
-                                                    <td><select class="cptcodes" style="width:112px;">
+                                                    <td>
+                                                        <select class="dxcode" style="width:112px;">
                                                         <!-- Dropdown List Option -->
-                                                    </select>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select class="cptcodes" style="width:112px;">
+                                                        <!-- Dropdown List Option -->
+                                                        </select>
                                                     </td>
                                                     <td><select class="cpt-desc" style="width:112px;">
                                                         <!-- Dropdown List Option -->
                                                     </select>
                                                     </td>
                                                     <td>
-                                                        <div class="ui toggle checkbox">
-                                                            <input type="checkbox" name="public">
-                                                            <label></label>
-                                                        </div>
                                                     </td>
                                                     <td class="text-left">
                                                         <button type="button" class="icon" title="Edit">
@@ -457,20 +487,21 @@
                                                 </tr>
                                                 <tr>
                                                     <td>3</td>
-                                                    <td><input type="text" placeholder="Pick a Date"/></td>
+                                                    <td>
+                                                        <select class="dxcode" style="width:112px;">
+                                                        <!-- Dropdown List Option -->
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select class="cptcodes" style="width:112px;">
+                                                        <!-- Dropdown List Option -->
+                                                        </select>
+                                                    </td>
                                                     <td><select class="cptcodes" style="width:112px;">
                                                         <!-- Dropdown List Option -->
                                                     </select>
                                                     </td>
-                                                    <td><select class="cpt-desc" style="width:112px;">
-                                                        <!-- Dropdown List Option -->
-                                                    </select>
-                                                    </td>
                                                     <td>
-                                                        <div class="ui toggle checkbox">
-                                                            <input type="checkbox" name="public">
-                                                            <label></label>
-                                                        </div>
                                                     </td>
                                                     <td class="text-left">
                                                         <button type="button" class="icon" title="Edit">
@@ -480,20 +511,21 @@
                                                 </tr>
                                                 <tr>
                                                     <td>4</td>
-                                                    <td><input type="text" placeholder="Pick a Date"/></td>
+                                                    <td>
+                                                        <select class="dxcode" style="width:112px;">
+                                                        <!-- Dropdown List Option -->
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select class="cptcodes" style="width:112px;">
+                                                        <!-- Dropdown List Option -->
+                                                        </select>
+                                                    </td>
                                                     <td><select class="cptcodes" style="width:112px;">
                                                         <!-- Dropdown List Option -->
                                                     </select>
                                                     </td>
-                                                    <td><select class="cpt-desc" style="width:112px;">
-                                                        <!-- Dropdown List Option -->
-                                                    </select>
-                                                    </td>
                                                     <td>
-                                                        <div class="ui toggle checkbox">
-                                                            <input type="checkbox" name="public">
-                                                            <label></label>
-                                                        </div>
                                                     </td>
 
                                                     <td class="text-left">
@@ -512,15 +544,15 @@
                                         <span class="reviewed">Reviewed</span>
                                         <div class="status-wrap">
                                             <div class="ui checkbox">
-                                                <input type="checkbox" name="example" tabindex="0" class="hidden"><label>Valid/Invalid</label>
+                                                <input type="checkbox" name="example" tabindex="0" class="hidden">
                                             </div>
                                         </div>
+                                        <span class="reviewed">Valid/Invalid</span>
                                         <div class="ui toggle checkbox">
                                             <input type="checkbox" name="public">
-                                            <label></label>
                                         </div>
                                         <div class="edit-row">
-                                            <button class="btn btn-info ui button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Claim</button>
+                                            <button class="btn btn-info ui button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
                                             <div class="ui fluid popup top left transition hidden">
                                                 <div class="ui column divided grid">
                                                     <div class="column">
@@ -549,7 +581,7 @@
                                     <div class="claim-inner">
                                     <div class="title">
                                         <i class="dropdown icon"></i>
-                                        <h2>Claim ID: 222222 | DX Code
+                                        <h2>Claim ID: 222222 |
                                             <small> DOS: 01/01/2016 | Coding Date: 01/20/2016 </small>
                                         </h2>
                                     </div>
@@ -595,6 +627,9 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -612,6 +647,9 @@
                                                 <td class="text-left">
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
+                                                    </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
                                                     </button>
                                                 </td>
                                             </tr>
@@ -631,6 +669,9 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -648,6 +689,9 @@
                                                 <td class="text-left">
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
+                                                    </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
                                                     </button>
                                                 </td>
                                             </tr>
@@ -667,6 +711,9 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -684,6 +731,9 @@
                                                 <td class="text-left">
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
+                                                    </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
                                                     </button>
                                                 </td>
                                             </tr>
@@ -703,6 +753,9 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -720,6 +773,9 @@
                                                 <td class="text-left">
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
+                                                    </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
                                                     </button>
                                                 </td>
                                             </tr>
@@ -739,10 +795,6 @@
                                                 </select>
                                                 </td>
                                                 <td>
-                                                    <div class="ui toggle checkbox">
-                                                        <input type="checkbox" name="public">
-                                                        <label></label>
-                                                    </div>
                                                 </td>
                                                 <td class="text-left">
                                                     <button type="button" class="icon" title="Edit">
@@ -763,6 +815,9 @@
                                                 <tr>
                                                     <th>#</th>
                                                     <th>
+                                                        DX Code
+                                                    </th>
+                                                    <th>
                                                         CPT Code
 
                                                     </th>
@@ -776,6 +831,7 @@
                                                 <tbody>
                                                 <tr>
                                                     <td>1</td>
+                                                    <td>A022</td>
                                                     <td>0001F</td>
                                                     <td>Heart Failure Composite</td>
                                                     <td>
@@ -788,10 +844,18 @@
                                                         <button type="button" class="icon" title="Edit">
                                                             <span class="icon-remark"></span>
                                                         </button>
+                                                        <button type="button" class="icon" title="remark">
+                                                            <i class="fa fa-list" aria-hidden="true"></i>
+                                                        </button>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>2</td>
+                                                    <td>
+                                                        <select class="dxcode" style="width:112px;">
+                                                        <!-- Dropdown List Option -->
+                                                        </select>
+                                                    </td>
                                                     <td><select class="cptcodes" style="width:112px;">
                                                         <!-- Dropdown List Option -->
                                                     </select>
@@ -801,10 +865,6 @@
                                                     </select>
                                                     </td>
                                                     <td>
-                                                        <div class="ui toggle checkbox">
-                                                            <input type="checkbox" name="public">
-                                                            <label></label>
-                                                        </div>
                                                     </td>
                                                     <td class="text-left">
                                                         <button type="button" class="icon" title="Edit">
@@ -814,20 +874,21 @@
                                                 </tr>
                                                 <tr>
                                                     <td>3</td>
-                                                    <td><input type="text" placeholder="Pick a Date"/></td>
+                                                    <td>
+                                                        <select class="dxcode" style="width:112px;">
+                                                        <!-- Dropdown List Option -->
+                                                        </select>
+                                                    </td>
                                                     <td><select class="cptcodes" style="width:112px;">
                                                         <!-- Dropdown List Option -->
                                                     </select>
                                                     </td>
-                                                    <td><select class="cpt-desc" style="width:112px;">
+                                                    <td>
+                                                        <select class="cpt-desc" style="width:112px;">
                                                         <!-- Dropdown List Option -->
-                                                    </select>
+                                                        </select>
                                                     </td>
                                                     <td>
-                                                        <div class="ui toggle checkbox">
-                                                            <input type="checkbox" name="public">
-                                                            <label></label>
-                                                        </div>
                                                     </td>
                                                     <td class="text-left">
                                                         <button type="button" class="icon" title="Edit">
@@ -837,7 +898,11 @@
                                                 </tr>
                                                 <tr>
                                                     <td>4</td>
-                                                    <td><input type="text" placeholder="Pick a Date"/></td>
+                                                    <td>
+                                                        <select class="dxcode" style="width:112px;">
+                                                        <!-- Dropdown List Option -->
+                                                        </select>
+                                                    </td>
                                                     <td><select class="cptcodes" style="width:112px;">
                                                         <!-- Dropdown List Option -->
                                                     </select>
@@ -847,10 +912,6 @@
                                                     </select>
                                                     </td>
                                                     <td>
-                                                        <div class="ui toggle checkbox">
-                                                            <input type="checkbox" name="public">
-                                                            <label></label>
-                                                        </div>
                                                     </td>
 
                                                     <td class="text-left">
@@ -869,22 +930,22 @@
                                         <span class="reviewed">Reviewed</span>
                                         <div class="status-wrap">
                                             <div class="ui checkbox">
-                                                <input type="checkbox" name="example" tabindex="0" class="hidden"><label>Valid/Invalid</label>
+                                                <input type="checkbox" name="example" tabindex="0" class="hidden">
                                             </div>
                                         </div>
+                                        <span class="reviewed">Valid/Invalid</span>
                                         <div class="ui toggle checkbox">
                                             <input type="checkbox" name="public">
-                                            <label></label>
                                         </div>
                                         <div class="edit-row">
-                                            <button class="btn btn-info" title="Edit Claim"><span class="icon-plus"></span>Claim</button>
+                                            <button class="btn btn-info" title="Edit Claim"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
                                         </div>
                                     </div>
                                     </div>
                                     <div class="claim-inner">
                                     <div class="title">
                                         <i class="dropdown icon"></i>
-                                        <h2>Claim ID: 333333 | DX Code
+                                        <h2>Claim ID: 333333 |
                                             <small> DOS: 01/01/2016 | Coding Date: 01/20/2016 </small>
                                         </h2>
                                     </div>
@@ -930,6 +991,9 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -947,6 +1011,9 @@
                                                 <td class="text-left">
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
+                                                    </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
                                                     </button>
                                                 </td>
                                             </tr>
@@ -966,6 +1033,9 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -983,6 +1053,9 @@
                                                 <td class="text-left">
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
+                                                    </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
                                                     </button>
                                                 </td>
                                             </tr>
@@ -1002,6 +1075,9 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1019,6 +1095,9 @@
                                                 <td class="text-left">
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
+                                                    </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
                                                     </button>
                                                 </td>
                                             </tr>
@@ -1038,6 +1117,9 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -1056,13 +1138,17 @@
                                                     <button type="button" class="icon" title="Edit">
                                                         <span class="icon-remark"></span>
                                                     </button>
+                                                    <button type="button" class="icon" title="remark">
+                                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                                    </button>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>9</td>
-                                                <td><select class="dxcode" style="width:112px;">
+                                                <td>
+                                                    <select class="dxcode" style="width:112px;">
                                                     <!-- Dropdown List Option -->
-                                                </select>
+                                                    </select>
                                                 </td>
                                                 <td><select class="description" style="width:112px;">
                                                     <!-- Dropdown List Option -->
@@ -1074,10 +1160,6 @@
                                                 </select>
                                                 </td>
                                                 <td>
-                                                    <div class="ui toggle checkbox">
-                                                        <input type="checkbox" name="public">
-                                                        <label></label>
-                                                    </div>
                                                 </td>
                                                 <td class="text-left">
                                                     <button type="button" class="icon" title="Edit">
@@ -1098,6 +1180,9 @@
                                                 <tr>
                                                     <th>#</th>
                                                     <th>
+                                                        DX Code
+                                                    </th>
+                                                    <th>
                                                         CPT Code
 
                                                     </th>
@@ -1111,6 +1196,7 @@
                                                 <tbody>
                                                 <tr>
                                                     <td>1</td>
+                                                    <td>A022</td>
                                                     <td>0001F</td>
                                                     <td>Heart Failure Composite</td>
                                                     <td>
@@ -1123,10 +1209,18 @@
                                                         <button type="button" class="icon" title="Edit">
                                                             <span class="icon-remark"></span>
                                                         </button>
+                                                        <button type="button" class="icon" title="remark">
+                                                            <i class="fa fa-list" aria-hidden="true"></i>
+                                                        </button>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>2</td>
+                                                    <td>
+                                                        <select class="dxcode" style="width:112px;">
+                                                        <!-- Dropdown List Option -->
+                                                        </select>
+                                                    </td>
                                                     <td><select class="cptcodes" style="width:112px;">
                                                         <!-- Dropdown List Option -->
                                                     </select>
@@ -1136,10 +1230,6 @@
                                                     </select>
                                                     </td>
                                                     <td>
-                                                        <div class="ui toggle checkbox">
-                                                            <input type="checkbox" name="public">
-                                                            <label></label>
-                                                        </div>
                                                     </td>
                                                     <td class="text-left">
                                                         <button type="button" class="icon" title="Edit">
@@ -1149,20 +1239,21 @@
                                                 </tr>
                                                 <tr>
                                                     <td>3</td>
-                                                    <td><input type="text" placeholder="Pick a Date"/></td>
+                                                    <td>
+                                                        <select class="dxcode" style="width:112px;">
+                                                        <!-- Dropdown List Option -->
+                                                        </select>
+                                                    </td>
                                                     <td><select class="cptcodes" style="width:112px;">
                                                         <!-- Dropdown List Option -->
                                                     </select>
                                                     </td>
-                                                    <td><select class="cpt-desc" style="width:112px;">
+                                                    <td>
+                                                        <select class="cpt-desc" style="width:112px;">
                                                         <!-- Dropdown List Option -->
-                                                    </select>
+                                                        </select>
                                                     </td>
                                                     <td>
-                                                        <div class="ui toggle checkbox">
-                                                            <input type="checkbox" name="public">
-                                                            <label></label>
-                                                        </div>
                                                     </td>
                                                     <td class="text-left">
                                                         <button type="button" class="icon" title="Edit">
@@ -1172,7 +1263,11 @@
                                                 </tr>
                                                 <tr>
                                                     <td>4</td>
-                                                    <td><input type="text" placeholder="Pick a Date"/></td>
+                                                    <td>
+                                                        <select class="dxcode" style="width:112px;">
+                                                        <!-- Dropdown List Option -->
+                                                        </select>
+                                                    </td>
                                                     <td><select class="cptcodes" style="width:112px;">
                                                         <!-- Dropdown List Option -->
                                                     </select>
@@ -1182,10 +1277,6 @@
                                                     </select>
                                                     </td>
                                                     <td>
-                                                        <div class="ui toggle checkbox">
-                                                            <input type="checkbox" name="public">
-                                                            <label></label>
-                                                        </div>
                                                     </td>
 
                                                     <td class="text-left">
@@ -1204,15 +1295,15 @@
                                         <span class="reviewed">Reviewed</span>
                                         <div class="status-wrap">
                                             <div class="ui checkbox">
-                                                <input type="checkbox" name="example" tabindex="0" class="hidden"><label>Valid/Invalid</label>
+                                                <input type="checkbox" name="example" tabindex="0" class="hidden">
                                             </div>
                                         </div>
+                                        <span class="reviewed">Valid/Invalid</span>
                                         <div class="ui toggle checkbox">
                                             <input type="checkbox" name="public">
-                                            <label></label>
                                         </div>
                                         <div class="edit-row">
-                                            <button class="btn btn-info" title="Edit Claim"><span class="icon-plus"></span>Claim</button>
+                                            <button class="btn btn-info" title="Edit Claim"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
                                         </div>
                                     </div>
                                     </div>
@@ -1224,6 +1315,7 @@
                             <div>
                                 <button class="btn btn-success"><span class="icon-checkmark"></span>Verification complete</button>
                                 <button class="btn btn-warn"><span class="icon-later"></span>Save for later</button>
+                                <button class="btn btn-incomplete"><span class="icono-unclear"></span>Cannot Review</button>
                             </div>
                             <div>
                                 <button class="btn btn-info">Next <span class="icon-next"></span></button>
