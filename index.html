@@ -28,9 +28,9 @@
                 </div>
                 <nav>
                     <ul>
-                        <li>
+                        <!-- <li>
                             <a href="claim_validation_main_full.html">Full View</a>
-                        </li>
+                        </li> -->
                         <li>About</li>
                         <li>Setting</li>
                         <li><div class="ui inline dropdown" tabindex="0">
@@ -159,7 +159,7 @@
                                 <h2>Claims/Encounters</h2>
                                 <div class="add-row">
                                     <button class="btn btn-info ui button">
-                                        <span class="icon-plus"></span> Claim
+                                        <span class="icon-plus"></span>
                                     </button>
                                     <div class="ui fluid popup top left transition hidden">
                                         <div class="ui column divided grid">
@@ -168,16 +168,16 @@
                                                     <div class="fields">
                                                         <div class="field">
                                                             <label>DOS</label>
-                                                            <input type="text" placeholder="DOS">
+                                                            <input type="text" placeholder="DOS" class="datepickerall"><span class="icon-calendar">
                                                         </div>
                                                         <div class="field">
                                                             <label>Claim ID</label>
                                                             <input type="text" placeholder="Claim ID">
                                                         </div>
-                                                        <div class="field">
+                                                        <!-- <div class="field">
                                                             <label>Coding Date</label>
                                                             <input type="text" placeholder="Coding Date">
-                                                        </div>
+                                                         </div>-->
                                                         <div class="field">
                                                             <input class="ui green button" type="submit" value="Submit" />
                                                         </div>
@@ -560,7 +560,7 @@
                                         </div>
                                         <div class="edit-row">
                                             <button class="btn btn-info ui button">
-                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Claim
+                                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                             </button>
                                             <div class="ui fluid popup top left transition hidden">
                                                 <div class="ui column divided grid">
@@ -569,16 +569,16 @@
                                                             <div class="fields">
                                                                 <div class="field">
                                                                     <label>DOS</label>
-                                                                    <input type="text" placeholder="DOS">
+                                                                    <input type="text" placeholder="DOS" class="datepickerall">
                                                                 </div>
                                                                 <div class="field">
                                                                     <label>Claim ID</label>
                                                                     <input type="text" placeholder="Claim ID">
                                                                 </div>
-                                                                <div class="field">
+                                                                <!-- <div class="field">
                                                                     <label>Coding Date</label>
                                                                     <input type="text" placeholder="Coding Date">
-                                                                </div>
+                                                                </div> -->
                                                                 <div class="field">
                                                                     <input class="ui green button" type="submit" value="Submit" />
                                                                 </div>
@@ -950,7 +950,7 @@
                                             </div>
                                         </div>
                                         <div class="edit-row">
-                                            <button class="btn btn-info ui button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Claim</button>
+                                            <button class="btn btn-info ui button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
                                             <div class="ui fluid popup top left transition hidden">
                                                 <div class="ui column divided grid">
                                                     <div class="column">
@@ -958,16 +958,16 @@
                                                             <div class="fields">
                                                                 <div class="field">
                                                                     <label>DOS</label>
-                                                                    <input type="text" placeholder="DOS">
+                                                                    <input type="text" placeholder="DOS" class="datepickerall">
                                                                 </div>
                                                                 <div class="field">
                                                                     <label>Claim ID</label>
                                                                     <input type="text" placeholder="Claim ID">
                                                                 </div>
-                                                                <div class="field">
+                                                                <!-- <div class="field">
                                                                     <label>Coding Date</label>
                                                                     <input type="text" placeholder="Coding Date">
-                                                                </div>
+                                                                </div> -->
                                                                 <div class="field">
                                                                     <input class="ui green button" type="submit" value="Submit" />
                                                                 </div>
@@ -1019,7 +1019,7 @@
                                                 <td>Dr Tam</td>
                                                 <td>
                                                     <div class="ui toggle checkbox">
-                                                        <input type="checkbox" name="public">
+                                                        <input type="checkbox" name="public" checked>
                                                         <label></label>
                                                     </div>
                                                 </td>
@@ -1040,7 +1040,7 @@
                                                 <td>Dr Tam</td>
                                                 <td>
                                                     <div class="ui toggle checkbox">
-                                                        <input type="checkbox" name="public">
+                                                        <input type="checkbox" name="public" checked>
                                                         <label></label>
                                                     </div>
                                                 </td>
@@ -1061,7 +1061,7 @@
                                                 <td>Dr Tam</td>
                                                 <td>
                                                     <div class="ui toggle checkbox">
-                                                        <input type="checkbox" name="public">
+                                                        <input type="checkbox" name="public" checked>
                                                         <label></label>
                                                     </div>
                                                 </td>
@@ -1071,134 +1071,6 @@
                                                     </button>
                                                     <button type="button" class="icon" title="remark">
                                                         <i class="fa fa-list" aria-hidden="true"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>A0222</td>
-                                                <td>Salmonella pneumonia</td>
-                                                <td>HCC19 RXHCC</td>
-                                                <td>Dr Tam</td>
-                                                <td>
-                                                    <div class="ui toggle checkbox">
-                                                        <input type="checkbox" name="public">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-left">
-                                                    <button type="button" class="icon" title="Edit">
-                                                        <span class="icon-remark"></span>
-                                                    </button>
-                                                    <button type="button" class="icon" title="remark">
-                                                        <i class="fa fa-list" aria-hidden="true"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>A0222</td>
-                                                <td>Salmonella pneumonia</td>
-                                                <td>HCC19 RXHCC</td>
-                                                <td>Dr Tam</td>
-                                                <td>
-                                                    <div class="ui toggle checkbox">
-                                                        <input type="checkbox" name="public">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-left">
-                                                    <button type="button" class="icon" title="Edit">
-                                                        <span class="icon-remark"></span>
-                                                    </button>
-                                                    <button type="button" class="icon" title="remark">
-                                                        <i class="fa fa-list" aria-hidden="true"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>A0222</td>
-                                                <td>Salmonella pneumonia</td>
-                                                <td>HCC19 RXHCC</td>
-                                                <td>Dr Tam</td>
-                                                <td>
-                                                    <div class="ui toggle checkbox">
-                                                        <input type="checkbox" name="public">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-left">
-                                                    <button type="button" class="icon" title="Edit">
-                                                        <span class="icon-remark"></span>
-                                                    </button>
-                                                    <button type="button" class="icon" title="remark">
-                                                        <i class="fa fa-list" aria-hidden="true"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>7</td>
-                                                <td>A0222</td>
-                                                <td>Salmonella pneumonia</td>
-                                                <td>HCC19 RXHCC</td>
-                                                <td>Dr Tam</td>
-                                                <td>
-                                                    <div class="ui toggle checkbox">
-                                                        <input type="checkbox" name="public">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-left">
-                                                    <button type="button" class="icon" title="Edit">
-                                                        <span class="icon-remark"></span>
-                                                    </button>
-                                                    <button type="button" class="icon" title="remark">
-                                                        <i class="fa fa-list" aria-hidden="true"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>8</td>
-                                                <td>A0222</td>
-                                                <td>Salmonella pneumonia</td>
-                                                <td>HCC19 RXHCC</td>
-                                                <td>Dr Tam</td>
-                                                <td>
-                                                    <div class="ui toggle checkbox">
-                                                        <input type="checkbox" name="public">
-                                                        <label></label>
-                                                    </div>
-                                                </td>
-                                                <td class="text-left">
-                                                    <button type="button" class="icon" title="Edit">
-                                                        <span class="icon-remark"></span>
-                                                    </button>
-                                                    <button type="button" class="icon" title="remark">
-                                                        <i class="fa fa-list" aria-hidden="true"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>9</td>
-                                                <td>
-                                                    <select class="dxcode" style="width:112px;">
-                                                    <!-- Dropdown List Option -->
-                                                    </select>
-                                                </td>
-                                                <td><select class="description" style="width:112px;">
-                                                    <!-- Dropdown List Option -->
-                                                </select>
-                                                </td>
-                                                <td></td>
-                                                <td><select class="doctors" style="width:112px;">
-                                                    <!-- Dropdown List Option -->
-                                                </select>
-                                                </td>
-                                                <td></td>
-                                                <td class="text-left">
-                                                    <button type="button" class="icon" title="Edit">
-                                                        <span class="icon-remark"></span>
                                                     </button>
                                                 </td>
                                             </tr>
@@ -1236,7 +1108,7 @@
                                                     <td>Heart Failure Composite</td>
                                                     <td>
                                                         <div class="ui toggle checkbox">
-                                                            <input type="checkbox" name="public">
+                                                            <input type="checkbox" name="public" checked>
                                                             <label></label>
                                                         </div>
                                                     </td>
@@ -1249,77 +1121,6 @@
                                                         </button>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>
-                                                        <select class="dxcode" style="width:112px;">
-                                                        <!-- Dropdown List Option -->
-                                                        </select>
-                                                    </td>
-                                                    <td><select class="cptcodes" style="width:112px;">
-                                                        <!-- Dropdown List Option -->
-                                                    </select>
-                                                    </td>
-                                                    <td><select class="cpt-desc" style="width:112px;">
-                                                        <!-- Dropdown List Option -->
-                                                    </select>
-                                                    </td>
-                                                    <td>
-                                                    </td>
-                                                    <td class="text-left">
-                                                        <button type="button" class="icon" title="Edit">
-                                                            <span class="icon-remark"></span>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>
-                                                        <select class="dxcode" style="width:112px;">
-                                                        <!-- Dropdown List Option -->
-                                                        </select>
-                                                    </td>
-                                                    <td><select class="cptcodes" style="width:112px;">
-                                                        <!-- Dropdown List Option -->
-                                                    </select>
-                                                    </td>
-                                                    <td>
-                                                        <select class="cpt-desc" style="width:112px;">
-                                                        <!-- Dropdown List Option -->
-                                                        </select>
-                                                    </td>
-                                                    <td>
-                                                    </td>
-                                                    <td class="text-left">
-                                                        <button type="button" class="icon" title="Edit">
-                                                            <span class="icon-remark"></span>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>
-                                                        <select class="dxcode" style="width:112px;">
-                                                        <!-- Dropdown List Option -->
-                                                        </select>
-                                                    </td>
-                                                    <td><select class="cptcodes" style="width:112px;">
-                                                        <!-- Dropdown List Option -->
-                                                    </select>
-                                                    </td>
-                                                    <td><select class="cpt-desc" style="width:112px;">
-                                                        <!-- Dropdown List Option -->
-                                                    </select>
-                                                    </td>
-                                                    <td>
-                                                    </td>
-
-                                                    <td class="text-left">
-                                                        <button type="button" class="icon" title="Edit">
-                                                            <span class="icon-remark"></span>
-                                                        </button>
-                                                    </td>
-                                                </tr>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -1329,17 +1130,17 @@
                                     <div class="add-section">
                                         <div class="status-wrap">
                                             <div class="ui checkbox">
-                                                <input type="checkbox" name="example" tabindex="0" class="hidden"><label>Reviewed</label>
+                                                <input type="checkbox" name="example" tabindex="0" class="hidden" checked><label>Reviewed</label>
                                             </div>
                                         </div>
                                         <div class="indicator-wrap">
                                             <label>Valid/Invalid</label>
                                             <div class="ui toggle checkbox">
-                                                <input type="checkbox" name="public">
+                                                <input type="checkbox" name="public" checked>
                                             </div>
                                         </div>
                                         <div class="edit-row">
-                                            <button class="btn btn-info ui button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Claim</button>
+                                            <button class="btn btn-info ui button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
                                             <div class="ui fluid popup top left transition hidden">
                                                 <div class="ui column divided grid">
                                                     <div class="column">
@@ -1347,16 +1148,16 @@
                                                             <div class="fields">
                                                                 <div class="field">
                                                                     <label>DOS</label>
-                                                                    <input type="text" placeholder="DOS">
+                                                                    <input type="text" placeholder="DOS" class="datepickerall">
                                                                 </div>
                                                                 <div class="field">
                                                                     <label>Claim ID</label>
                                                                     <input type="text" placeholder="Claim ID">
                                                                 </div>
-                                                                <div class="field">
+                                                                <!-- <div class="field">
                                                                     <label>Coding Date</label>
                                                                     <input type="text" placeholder="Coding Date">
-                                                                </div>
+                                                                </div> -->
                                                                 <div class="field">
                                                                     <input class="ui green button" type="submit" value="Submit" />
                                                                 </div>
@@ -1422,6 +1223,10 @@
 
             $(function() {
                 $("#datepicker-2").datepicker();
+            });
+
+            $(function() {
+                $(".datepickerall").datepicker();
             });
 
             $(function() {
