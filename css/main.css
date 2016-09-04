@@ -937,6 +937,26 @@ button.icon [class*=" icon-"] {
     background: #e2ffeb !important;
 }
 
+.text-left .ui.labeled.icon.button {
+    padding: 5px 6px 5px !important;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #f4f4f4;
+    margin-right: 0;
+}
+
+.text-left .ui.labeled.icon.button .fa {
+    color: #0cc2aa;
+    font-size: 14px;
+}
+
+.text-left .ui.floating.dropdown .menu {
+    left: -150px;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
