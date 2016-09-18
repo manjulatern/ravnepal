@@ -314,6 +314,7 @@ button, input, select, textarea {
 
 .profile-member-block {
     margin-top: 0;
+    clear: both;
 }
 
 .table-chart-container {
@@ -1029,6 +1030,56 @@ button.icon [class*=" icon-"] {
     line-height: 14px;
     margin-right: 0;
 }
+
+.not-review-wrap {
+    position: relative;
+}
+
+.not-review {
+    padding: 10px 0;
+}
+
+.not-review-btn {
+    float: right;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.not-review .btn-danger,
+.not-review .text-left{
+    display: inline-block;
+}
+
+.not-review .text-left{
+    position: relative;
+    top: 5px;
+}
+
+.not-review .btn-danger {
+    margin-right: 10px;
+}
+
+
+.inline-message-review{
+    display: none;
+    background: #d3d3d3;
+    padding: 10px;
+}
+
+.inline-message-review.is-visible {
+    display: block;
+    clear: both;
+    width: 750px;
+    margin-left: 20px;
+}
+
+.inline-message-review input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+}
+
 
 /* ==========================================================================
    Helper classes
