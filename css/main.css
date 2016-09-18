@@ -396,7 +396,7 @@ button, input, select, textarea {
 
 /* PDF Object */
 .pdfobject-container {
-    height: 89vh;
+    height: 600px;
     padding-bottom: 0;
 }
 
@@ -1042,21 +1042,20 @@ button.icon [class*=" icon-"] {
 .not-review-btn {
     float: right;
     clear: both;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 5px 10px;
 }
 
-.not-review .btn-danger,
+.not-review .review-text,
 .not-review .text-left{
     display: inline-block;
 }
 
-.not-review .text-left{
-    position: relative;
-    top: 5px;
-}
-
-.not-review .btn-danger {
+.not-review .review-text {
     margin-right: 10px;
+    font-size: 14px;
 }
 
 
