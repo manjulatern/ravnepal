@@ -395,20 +395,9 @@ button, input, select, textarea {
 
 /* PDF Object */
 .pdfobject-container {
-    height: 580px;
+    height: 89vh;
+    padding-bottom: 0;
 }
-
-.pdfobject {
-    border: 1px solid #666;
-}
-
-/*.card-container{
-    overflow-x: auto;
-    min-height: .01%;
-    border: 0;
-    max-height: f600px;
-    margin-bottom: 12px;
-}*/
 
 .card-body input[type="text"] {
     display: block;
@@ -531,12 +520,11 @@ button, input, select, textarea {
 }
 
 .table-responsive {
-    overflow-x: auto;
     min-height: .01%;
     border: 0;
     max-height: 450px;
-    overflow-x: auto;
     margin-top: 0px;
+    overflow-x: auto;
 }
 
 table {
@@ -631,6 +619,15 @@ button.icon {
     border-radius: 50%;
 }
 
+button.icon.is-selected{
+    background: #43bf80;
+}
+
+button.icon.is-selected [class^="icon-"],
+button.icon.is-selected [class*=" icon-"]{
+    color: #fff;
+}
+
 button.icon:last-child {
     margin-right: 0;
 }
@@ -650,8 +647,7 @@ button.icon [class*=" icon-"] {
     max-width: 1300px;
     padding: 0 10px;
     margin: 0 auto;
-    overflow: hidden;
-    /*position: relative;*/
+    display: flex;
 }
 
 .view .btn {
@@ -806,21 +802,35 @@ button.icon [class*=" icon-"] {
 }
 
 .card-header .add-row {
-    right: -10px;
+    right: -15px;
     top: 5px;
+    width: 65px;
 }
+
+.card-header .add-row > div {
+    float: left;
+}
+
+.card-header .add-row .comment {
+    margin-right: 5px;
+}
+
+
 
 .card-header .add-row .btn {
     background: #5e5e5e;
-    border-radius: 6px;
-    padding: 7px 10px;
+    border-radius: 50%;
+    padding: 0;
     color: #fff;
     font-weight: normal;
     margin-right: 0;
+    width: 30px;
+    height: 30px;
 }
 
-.card-header .add-row .btn [class^="icon-"], [class*=" icon-"] {
-    margin-right: 3px;
+.card-header .add-row .btn [class^="icon-"],
+.card-header .add-row .btn [class*=" icon-"] {
+    margin-right: 0;
     font-size: 10px;
 }
 
@@ -855,12 +865,15 @@ button.icon [class*=" icon-"] {
 
 .add-section .btn {
     background: #5e5e5e;
-    border-radius: 6px;
-    padding: 5px 10px;
+    border-radius: 30px;
+    padding: 0 10px;
     font-size: 14px;
-    margin-right: 0;
+    margin-right: -5px;
     color: #fff;
     font-weight: normal;
+    width: 30px;
+    height: 30px;
+    margin-top: -3px;
 }
 
 .add-section .indicator-wrap {
@@ -947,15 +960,75 @@ button.icon [class*=" icon-"] {
     margin-right: 0;
 }
 
+.text-left .ui.labeled.icon.button.is-selected{
+    background: #43bf80;
+}
+
+.text-left .ui.labeled.icon.button.is-selected .fa-list{
+    color: #fff;
+}
+
 .text-left .ui.labeled.icon.button .fa {
     color: #0cc2aa;
     font-size: 14px;
 }
 
-.text-left .ui.floating.dropdown .menu {
-    left: -150px;
+.text-left .ui.labeled.icon.button .fa.fa-search{
+    position: absolute;
+    right: 10px;
+    top: 5px;
 }
 
+.text-left .ui.floating.dropdown .menu {
+    left: -480px;
+    width: 505px;
+    margin-bottom: 20px;
+}
+
+.text-left .ui.dropdown .menu>.input{
+    margin: 10px;
+}
+
+.text-left .ui.dropdown .menu>.header {
+    margin: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+
+.text-left .ui.dropdown .menu>.divider {
+    margin: 0;
+}
+
+.text-left .ui.dropdown .scrolling.menu>.item.item.item {
+    font-size: 14px;
+}
+
+.text-left .ui.dropdown>.visible.menu .scrolling.menu {
+    max-height: 150px;
+    overflow-x: auto;
+}
+
+.comment .ui.form .fields .field:first-child {
+    width: 580px;
+    font-size: 14px;
+}
+
+.add-claim-section {
+    padding: 8px 20px 8px 30px;
+    background: #f6f6f6;
+}
+
+.add-claim-section .ui.form input[type=text] {
+    font-size: 12px;
+}
+
+.add-claim-section .ui.button {
+    padding: 7px 10px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 0;
+}
 
 /* ==========================================================================
    Helper classes

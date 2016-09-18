@@ -7,6 +7,12 @@ $( function() {
         .dropdown()
     ;
 
+    $('.floating.dropdown.button')
+        .dropdown({
+            direction: 'auto'
+        })
+    ;
+
     $('.ui.checkbox')
         .checkbox()
     ;
@@ -20,7 +26,6 @@ $( function() {
     ;
 
     $( ".show-message" ).on( "click", function() {
-        console.log('Hey');
-        $( ".inline-message" ).toggleClass("is-visible");
+        $(this).parents().next().toggleClass("is-visible");
     });
 } );
