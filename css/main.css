@@ -278,6 +278,8 @@ button, input, select, textarea {
 
 .main-header .main-container {
     overflow: visible;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-header .ui.dropdown .menu > .item {
@@ -285,8 +287,12 @@ button, input, select, textarea {
 }
 
 .main-header nav {
-    float: right;
     font-size: 16px;
+}
+
+.main-header nav .ui.inline.dropdown .menu {
+    right: 0;
+    top: 70px;
 }
 
 .main-header nav ul {
