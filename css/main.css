@@ -873,7 +873,7 @@ button.icon [class*=" icon-"] {
 .add-section .btn {
     background: #5e5e5e;
     border-radius: 30px;
-    padding: 0 10px;
+    padding: 0 9px;
     font-size: 14px;
     margin-right: -5px;
     color: #fff;
@@ -1085,6 +1085,41 @@ button.icon [class*=" icon-"] {
     border-radius: 4px;
 }
 
+
+.editable-buttons {
+    display: none;
+}
+
+.card-container .ui.styled.accordion .title {
+    height: 38px;
+}
+
+.card-container .ui.accordion .title .dropdown.icon {
+    margin-top: 3px;
+}
+
+.claim-title-inner {
+    position: absolute;
+    top: 10px;
+    left: 32px;
+}
+
+.editable-input {
+    margin-top: -3px;
+}
+
+.editable-input input {
+    border: 1px solid #f8f8f8;
+    padding-left: 5px;
+}
+
+.claim-title-inner h2 {
+    font-size: 14px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    color: #333;
+}
 
 /* ==========================================================================
    Helper classes
