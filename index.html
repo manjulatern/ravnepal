@@ -1483,7 +1483,53 @@
                     <div>
                         <button class="btn btn-success"><span class="icon-checkmark"></span>Coding complete</button>
                         <button class="btn btn-warn"><span class="icon-later"></span>Save for later</button>
-                        <!--<button class="btn btn-danger"><i class="fa fa-times" aria-hidden="true"></i> Cannot Review</button>-->
+                        <button class="btn btn-danger ui button"><i class="fa fa-times" aria-hidden="true"></i> Cannot Review</button>
+                        <div class="ui fluid popup top left transition hidden">
+                            <div class="ui column divided grid">
+                                <div class="column">
+                                    <div class="ui form">
+                                        <div class="fields">
+                                            <div class="field">
+                                                <input type="text" placeholder="Enter comment">
+                                            </div>
+                                            <div class="field">
+                                                <input class="ui green button" type="submit" value="Submit" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="standard-msg">
+                                <span>For standard message:</span>
+                                <div class="ui bottom pointing dropdown icon button">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <div class="menu" tabindex="-1">
+                                        <div class="ui icon search input">
+                                            <i class="fa fa-search"></i>
+                                            <input type="text" placeholder="Search tags..." tabindex="0">
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="header">
+                                            <i class="fa fa-tag"></i> Standard Messages
+                                        </div>
+                                        <div class="scrolling menu">
+                                            <div class="item" data-value="important">
+                                                Chart is incomplete
+                                            </div>
+                                            <div class="item" data-value="announcement">
+                                                Cannot Read chart
+                                            </div>
+                                            <div class="item" data-value="cannotfix">
+                                                Wrong Chart
+                                            </div>
+                                            <div class="item" data-value="news">
+                                                Other reason
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <button class="btn btn-info">Next <span class="icon-next"></span>
