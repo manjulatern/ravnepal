@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/css/jqueryui-editable.css" rel="stylesheet"/>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/css/jqueryui-editable.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/semantic.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
@@ -724,8 +724,8 @@
                                         </div>
                                     </div>
                                     <div class="claim-title-inner">
-                                        <h2>Claim ID:<a href="#" id="username" data-type="text" data-pk="1">a1b2c3d4e5f6g7h8i9j0</a> |
-                                            <small> DOS:<a href="#" id="dos-date" data-type="date" data-viewformat="dd.mm.yyyy" data-pk="1">01.01.2016</a> | Coding Date: <a href="#" id="code-date" data-type="date" data-viewformat="dd.mm.yyyy" data-pk="1">11.02.2016</a></small>
+                                        <h2>Claim ID: a1b2c3d4e5f6g7h8i9j0</a> | 
+                                            <small> DOS:<a href="#" id="dos-date" data-type="date" data-viewformat="dd/mm/yyyy" data-pk="1">01/01/2016</a> </small> | Coding Date: 11/02/2016
                                         </h2>
                                     </div>
                                     <div class="add-section">
@@ -762,10 +762,6 @@
                                 <div class="claim-inner">
                                     <div class="title light-red">
                                         <i class="dropdown icon"></i>
-
-                                        <h2>Claim ID: k2l2m2n2o2p2q2r2s2t2 |
-                                            <small> DOS: 12/01/2016 | Coding Date: 15/02/2016</small>
-                                        </h2>
                                     </div>
                                     <div class="content">
                                         <div class="card-body table-responsive">
@@ -1079,6 +1075,11 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="claim-title-inner">
+                                        <h2>Claim ID: k2l2m2n2o2p2q2r2s2t2 |
+                                            <small> DOS:<a href="#" id="dos-date" data-type="date" data-viewformat="dd/mm/yyyy" data-pk="1">12/01/2016</a> | Coding Date: 15/02/2016</small>
+                                        </h2>
+                                    </div>
                                     <div class="add-section">
                                         <div class="status-wrap">
                                             <div class="ui checkbox">
@@ -1087,31 +1088,24 @@
                                             </div>
                                         </div>
                                         <!-- <div class="indicator-wrap">
-                        <label>Valid/Invalid</label>
-                        <div class="ui toggle checkbox">
-                            <input type="checkbox" name="public">
-                        </div>
-                    </div> -->
-                                        <div class="edit-row">
-                                            <button class="btn btn-info ui button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-        </button>
+                                            <label>Valid/Invalid</label>
+                                            <div class="ui toggle checkbox">
+                                                <input type="checkbox" name="public">
+                                            </div>
+                                        </div> -->
+                                        <div class="edit-row comment">
+                                            <button class="btn btn-info ui button">
+                                                <i class="fa fa-comment"></i>
+                                            </button>
                                             <div class="ui fluid popup top left transition hidden">
                                                 <div class="ui column divided grid">
                                                     <div class="column">
                                                         <div class="ui form">
                                                             <div class="fields">
                                                                 <div class="field">
-                                                                    <label>Corrected DOS</label>
-                                                                    <input type="text" placeholder="dd/mm/yyyy">
+                                                                    <label>Comment</label>
+                                                                    <textarea rows="1"></textarea>
                                                                 </div>
-                                                                <div class="field">
-                                                                    <label>Corrected Provider</label>
-                                                                    <input type="text" placeholder="Provider">
-                                                                </div>
-                                                                <!-- <div class="field">
-                                                            <label>Coding Date</label>
-                                                            <input type="text" placeholder="Coding Date">
-                                                        </div> -->
                                                                 <div class="field">
                                                                     <input class="ui green button" type="submit" value="Submit" />
                                                                 </div>
@@ -1125,10 +1119,6 @@
                                     <div class="claim-inner">
                                         <div class="title light-green">
                                             <i class="dropdown icon"></i>
-
-                                            <h2>Claim ID: u3v3w3x3y3z3a3b3c3d3 |
-                                                <small> DOS: 19/01/2016 | Coding Date: 17/02/2016</small>
-                                            </h2>
                                         </div>
                                         <div class="content">
                                             <div class="card-body table-responsive">
@@ -1442,6 +1432,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="claim-title-inner">
+                                            <h2>Claim ID: u3v3w3x3y3z3a3b3c3d3 |
+                                                <small> DOS:<a href="#" id="dos-date" data-type="date" data-viewformat="dd/mm/yyyy" data-pk="1"> 19/01/2016</a> | Coding Date: 17/02/2016</small>
+                                            </h2>
+                                        </div>
                                         <div class="add-section">
                                             <div class="status-wrap">
                                                 <div class="ui checkbox">
@@ -1450,31 +1445,24 @@
                                                 </div>
                                             </div>
                                             <!-- <div class="indicator-wrap">
-                      <label>Valid/Invalid</label>
-                      <div class="ui toggle checkbox">
-                          <input type="checkbox" name="public" checked>
-                      </div>
-                  </div> -->
-                                            <div class="edit-row">
-                                                <button class="btn btn-info ui button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-        </button>
+                                                <label>Valid/Invalid</label>
+                                                <div class="ui toggle checkbox">
+                                                    <input type="checkbox" name="public" checked>
+                                                </div>
+                                            </div> -->
+                                            <div class="edit-row comment">
+                                                <button class="btn btn-info ui button">
+                                                    <i class="fa fa-comment"></i>
+                                                </button>
                                                 <div class="ui fluid popup top left transition hidden">
                                                     <div class="ui column divided grid">
                                                         <div class="column">
                                                             <div class="ui form">
                                                                 <div class="fields">
                                                                     <div class="field">
-                                                                        <label>DOS</label>
-                                                                        <input type="text" placeholder="dd/mm/yyyy">
+                                                                        <label>Comment</label>
+                                                                        <textarea rows="1"></textarea>
                                                                     </div>
-                                                                    <div class="field">
-                                                                        <label>Provider</label>
-                                                                        <input type="text" placeholder="Provider">
-                                                                    </div>
-                                                                    <!-- <div class="field">
-                                                          <label>Coding Date</label>
-                                                          <input type="text" placeholder="Coding Date">
-                                                      </div> -->
                                                                     <div class="field">
                                                                         <input class="ui green button" type="submit" value="Submit" />
                                                                     </div>
@@ -1509,7 +1497,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/js/jqueryui-editable.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/js/jqueryui-editable.min.js"></script>
     <script src="js/vendor/sticky-kit.js"></script>
     <script src="js/vendor/semantic.min.js"></script>
     <script src="js/main.js"></script>
