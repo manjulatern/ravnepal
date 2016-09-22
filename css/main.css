@@ -321,9 +321,9 @@ button, input, select, textarea {
 }
 
 .table-chart-container,
-.profile-member-block {
-    max-width: 1200px;
-    margin: 10px auto;
+.profile-member-block,
+.cannot-review-section{
+    margin: 10px 0;
     padding: 0 0 0 20px;
 }
 
@@ -472,6 +472,10 @@ button, input, select, textarea {
     font-size: 14px;
 }
 
+.completion-section .btn-danger{
+    display: none;
+}
+
 .completion-section .ui.bottom.right.popup {
     right: -185px !important;
     margin-bottom: 20px;
@@ -491,6 +495,11 @@ button, input, select, textarea {
     margin: 0;
     padding: 9px 11px;
     background-color: #f4f4f4;
+}
+
+.standard-msg .ui.dropdown.top .menu{
+    left: auto;
+    right: -110px;
 }
 
 .ui.form .fields .field .standard-msg .ui.input.search {
@@ -720,7 +729,7 @@ button.icon [class*=" icon-"] {
 }
 
 .main-container {
-    max-width: 1300px;
+    max-width: 1200px;
     padding: 0 10px;
     margin: 0 auto;
     display: flex;
@@ -827,6 +836,11 @@ button.icon [class*=" icon-"] {
     line-height: 26px;
 }
 
+.profile-member-block .provider-title {
+    margin-right: 0;
+    font-size: 12px;
+}
+
 .profile-member-block .card > div:nth-child(1) > * {
     display: inline-block;
     margin-bottom: 0;
@@ -878,9 +892,8 @@ button.icon [class*=" icon-"] {
 }
 
 .card-header .add-row {
-    right: -15px;
-    top: 5px;
-    width: 65px;
+    right: 10px;
+    top: 6px;
 }
 
 .card-header .add-row > div {
@@ -889,19 +902,18 @@ button.icon [class*=" icon-"] {
 
 .card-header .add-row .comment {
     margin-right: 5px;
+    display: none;
 }
 
 
 
 .card-header .add-row .btn {
     background: #5e5e5e;
-    border-radius: 50%;
     padding: 0;
     color: #fff;
     font-weight: normal;
     margin-right: 0;
-    width: 30px;
-    height: 30px;
+    padding: 6px 10px;
 }
 
 .card-header .add-row .btn [class^="icon-"],
@@ -1193,6 +1205,40 @@ button.icon [class*=" icon-"] {
 
 .ui-datepicker .ui-datepicker-title {
     color: #333;
+}
+
+.cannot-review-section .standard-message {
+    background: #fff;
+    box-shadow: 0px 1px 1px 1px #b1b1b1;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.standard-message .ui.form{
+    height: 33px;
+}
+
+.standard-message .ui.form .fields{
+    height: 100%;
+}
+
+.standard-message .ui.form .fields input,
+.standard-message .ui.form .fields button{
+    height: 100%;
+    font-size: 14px;
+}
+
+.standard-message .ui.form .fields .ui.button.danger{
+    color: #fff;
+    background: #DB2828;
+}
+
+.standard-message .ui.form .fields .ui.button.danger:hover{
+    background: #f12525;
+}
+
+.standard-message .ui.form .fields .field:first-child {
+    width: 400px;
 }
 
 /* ==========================================================================
