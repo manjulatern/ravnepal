@@ -481,10 +481,6 @@ button, input, select, textarea {
     font-size: 14px;
 }
 
-.completion-section .btn-danger{
-    display: none;
-}
-
 .completion-section .ui.bottom.right.popup {
     right: -185px !important;
     margin-bottom: 20px;
