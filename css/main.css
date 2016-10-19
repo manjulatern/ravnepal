@@ -1209,10 +1209,19 @@ button.icon [class*=" icon-"] {
     left: 32px;
 }
 
-.ui.form .review-select select {
-    padding: 0;
+.ui.form .review-select .ui.selection.dropdown {
+    padding: 4px;
+    min-height: auto;
     font-size: 12px;
-    margin-top: 4px;
+    margin-top: 5px;
+}
+
+.review-select .ui.dropdown .menu>.item {
+    font-size: 12px;
+}
+
+.review-select .ui.selection.dropdown .menu>.item {
+    padding: 5px !important;
 }
 
 .editable-input {
