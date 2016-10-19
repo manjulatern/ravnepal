@@ -434,7 +434,15 @@ button, input, select, textarea {
 }
 
 .card-body .inline-message input[type="text"]{
-    width: 100%;
+    width: 85%;
+    display: inline-block;
+}
+
+.card-body .inline-message .ui.green.button {
+    padding: 3px 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .inline-message td {
@@ -1210,10 +1218,12 @@ button.icon [class*=" icon-"] {
 }
 
 .ui.form .review-select .ui.selection.dropdown {
-    padding: 4px;
+    padding: 2px 4px 0;
     min-height: auto;
     font-size: 12px;
     margin-top: 5px;
+    color: #aaa;
+    line-height: 16px;
 }
 
 .review-select .ui.dropdown .menu>.item {
@@ -1222,6 +1232,14 @@ button.icon [class*=" icon-"] {
 
 .review-select .ui.selection.dropdown .menu>.item {
     padding: 5px !important;
+}
+
+.review-select .ui.dropdown>.text {
+    width: 150px;
+    padding-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .editable-input {
@@ -1260,6 +1278,7 @@ button.icon [class*=" icon-"] {
     font-size: 12px;
     font-weight: normal;
     display: block;
+    margin-top: -4px;
 }
 
 .standard-message .ui.form .fields{
