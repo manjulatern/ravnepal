@@ -32,4 +32,24 @@ $( function() {
     $( ".show-review-message" ).on( "click", function() {
         $('.inline-message-review').toggleClass("is-visible");
     });
+
+    //Toggle fullscreen
+    $("#panel-fullscreen").click(function (e) {
+        e.preventDefault();
+
+        var $this = $(this);
+
+        if ($this.children('i').hasClass('icon-resize'))
+        {
+            $this.children('i').removeClass('icon-resize');
+            $this.children('i').addClass('icon-resize');
+        }
+        else if ($this.children('i').hasClass('icon-resize'))
+        {
+            $this.children('i').removeClass('icon-resize');
+            $this.children('i').addClass('icon-resize');
+        }
+        $(this).closest('.chart-image').toggleClass('panel-fullscreen');
+    });
+
 } );
