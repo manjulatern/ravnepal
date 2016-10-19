@@ -163,10 +163,10 @@
                                 <input type="text" placeholder="Enter comment">
                             </div>
                             <div class="field">
-                                <small >
+                                <span>
                                     <strong>Cannot Review</strong>
-                                </small>
-                                <small>
+                                </span>
+                                <div class="review-select">
                                     <select>
                                         <option value="">Select one</option>
                                         <option value="1">Cannot read chart</option>
@@ -176,7 +176,7 @@
                                         <option value="5">Other.</option>
                                         <option value="6">Chart size is as long as this text</option>
                                     </select>
-                                </small>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -243,452 +243,454 @@
                         <div class="card-container">
                             <div class="ui styled accordion">
                                 <div class="claim-inner">
-                                    <div class="active title light-yellow">
+                                    <div class="title light-yellow">
                                         <i class="dropdown icon"></i>
                                     </div>
                                     <div class="content">
-                                        <div class="card-body table-responsive">
+                                        <div class="card-body">
                                             <div class="claim-wrap">
-                                                <table class="table">
+                                                <div class="claim-wrap-table table-responsive">
+                                                    <table class="table">
                                                     <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>DX Code</th>
-                                                            <th>Description</th>
-                                                            <th>HCC</th>
-                                                            <th>Provider Search</th>
-                                                            <th>Invalid</th>
-                                                            <th>Comment</th>
-                                                            <th>Reason</th>
-                                                        </tr>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>DX Code</th>
+                                                        <th>Description</th>
+                                                        <th>HCC</th>
+                                                        <th>Provider Search</th>
+                                                        <th>Invalid</th>
+                                                        <th>Comment</th>
+                                                        <th>Reason</th>
+                                                    </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>A0222</td>
-                                                            <td>Salmonella pneumonia</td>
-                                                            <td>RXHCC19</td>
-                                                            <td>Dr Tam</td>
-                                                            <td>
-                                                                <div class="ui checkbox">
-                                                                    <input type="checkbox" name="public">
-                                                                    <label></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <button type="button" class="icon show-message is-selected" title="Edit">
-                                                                    <span class="icon-remark"></span>
-                                                                </button>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <div class="ui floating labeled icon dropdown button is-selected">
-                                                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>A0222</td>
+                                                        <td>Salmonella pneumonia</td>
+                                                        <td>RXHCC19</td>
+                                                        <td>Dr Tam</td>
+                                                        <td>
+                                                            <div class="ui checkbox">
+                                                                <input type="checkbox" name="public">
+                                                                <label></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <button type="button" class="icon show-message is-selected" title="Edit">
+                                                                <span class="icon-remark"></span>
+                                                            </button>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <div class="ui floating labeled icon dropdown button is-selected">
+                                                                <i class="fa fa-list" aria-hidden="true"></i>
 
-                                                                    <div class="menu">
-                                                                        <div class="ui icon search input">
-                                                                            <i class="fa fa-search"></i>
-                                                                            <input type="text" placeholder="Search tags...">
+                                                                <div class="menu">
+                                                                    <div class="ui icon search input">
+                                                                        <i class="fa fa-search"></i>
+                                                                        <input type="text" placeholder="Search tags...">
+                                                                    </div>
+                                                                    <div class="divider"></div>
+                                                                    <div class="header">
+                                                                        <i class="fa fa-tag"></i> Standard Messages
+                                                                    </div>
+                                                                    <div class="scrolling menu">
+                                                                        <div class="item" data-value="important">
+                                                                            Important
                                                                         </div>
-                                                                        <div class="divider"></div>
-                                                                        <div class="header">
-                                                                            <i class="fa fa-tag"></i> Standard Messages
+                                                                        <div class="item" data-value="announcement">
+                                                                            Announcement
                                                                         </div>
-                                                                        <div class="scrolling menu">
-                                                                            <div class="item" data-value="important">
-                                                                                Important
-                                                                            </div>
-                                                                            <div class="item" data-value="announcement">
-                                                                                Announcement
-                                                                            </div>
-                                                                            <div class="item" data-value="cannotfix">
-                                                                                Cannot Fix
-                                                                            </div>
-                                                                            <div class="item" data-value="news">
-                                                                                News
-                                                                            </div>
+                                                                        <div class="item" data-value="cannotfix">
+                                                                            Cannot Fix
+                                                                        </div>
+                                                                        <div class="item" data-value="news">
+                                                                            News
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="inline-message">
-                                                            <td colspan="8">
-                                                                <input type="text" placeholder="Type your message">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>A0222</td>
-                                                            <td>Salmonella pneumonia</td>
-                                                            <td>RXHCC19</td>
-                                                            <td>Dr Tam</td>
-                                                            <td>
-                                                                <div class="ui checkbox">
-                                                                    <input type="checkbox" name="public">
-                                                                    <label></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <button type="button" class="icon show-message is-selected" title="Edit">
-                                                                    <span class="icon-remark"></span>
-                                                                </button>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <div class="ui floating labeled icon dropdown button">
-                                                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="inline-message">
+                                                        <td colspan="8">
+                                                            <input type="text" placeholder="Type your message">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>A0222</td>
+                                                        <td>Salmonella pneumonia</td>
+                                                        <td>RXHCC19</td>
+                                                        <td>Dr Tam</td>
+                                                        <td>
+                                                            <div class="ui checkbox">
+                                                                <input type="checkbox" name="public">
+                                                                <label></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <button type="button" class="icon show-message is-selected" title="Edit">
+                                                                <span class="icon-remark"></span>
+                                                            </button>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <div class="ui floating labeled icon dropdown button">
+                                                                <i class="fa fa-list" aria-hidden="true"></i>
 
-                                                                    <div class="menu">
-                                                                        <div class="ui icon search input">
-                                                                            <i class="fa fa-search"></i>
-                                                                            <input type="text" placeholder="Search tags...">
+                                                                <div class="menu">
+                                                                    <div class="ui icon search input">
+                                                                        <i class="fa fa-search"></i>
+                                                                        <input type="text" placeholder="Search tags...">
+                                                                    </div>
+                                                                    <div class="divider"></div>
+                                                                    <div class="header">
+                                                                        <i class="fa fa-tag"></i> Standard Messages
+                                                                    </div>
+                                                                    <div class="scrolling menu">
+                                                                        <div class="item" data-value="important">
+                                                                            Important
                                                                         </div>
-                                                                        <div class="divider"></div>
-                                                                        <div class="header">
-                                                                            <i class="fa fa-tag"></i> Standard Messages
+                                                                        <div class="item" data-value="announcement">
+                                                                            Announcement
                                                                         </div>
-                                                                        <div class="scrolling menu">
-                                                                            <div class="item" data-value="important">
-                                                                                Important
-                                                                            </div>
-                                                                            <div class="item" data-value="announcement">
-                                                                                Announcement
-                                                                            </div>
-                                                                            <div class="item" data-value="cannotfix">
-                                                                                Cannot Fix
-                                                                            </div>
-                                                                            <div class="item" data-value="news">
-                                                                                News
-                                                                            </div>
+                                                                        <div class="item" data-value="cannotfix">
+                                                                            Cannot Fix
+                                                                        </div>
+                                                                        <div class="item" data-value="news">
+                                                                            News
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="inline-message">
-                                                            <td colspan="8">
-                                                                <input type="text" placeholder="Type your message">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3</td>
-                                                            <td>A0222</td>
-                                                            <td>Salmonella pneumonia</td>
-                                                            <td>RXHCC19</td>
-                                                            <td>Dr Tam</td>
-                                                            <td>
-                                                                <div class="ui checkbox">
-                                                                    <input type="checkbox" name="public">
-                                                                    <label></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <button type="button" class="icon show-message" title="Edit">
-                                                                    <span class="icon-remark"></span>
-                                                                </button>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <div class="ui floating labeled icon dropdown button is-selected">
-                                                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="inline-message">
+                                                        <td colspan="8">
+                                                            <input type="text" placeholder="Type your message">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>A0222</td>
+                                                        <td>Salmonella pneumonia</td>
+                                                        <td>RXHCC19</td>
+                                                        <td>Dr Tam</td>
+                                                        <td>
+                                                            <div class="ui checkbox">
+                                                                <input type="checkbox" name="public">
+                                                                <label></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <button type="button" class="icon show-message" title="Edit">
+                                                                <span class="icon-remark"></span>
+                                                            </button>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <div class="ui floating labeled icon dropdown button is-selected">
+                                                                <i class="fa fa-list" aria-hidden="true"></i>
 
-                                                                    <div class="menu">
-                                                                        <div class="ui icon search input">
-                                                                            <i class="fa fa-search"></i>
-                                                                            <input type="text" placeholder="Search tags...">
+                                                                <div class="menu">
+                                                                    <div class="ui icon search input">
+                                                                        <i class="fa fa-search"></i>
+                                                                        <input type="text" placeholder="Search tags...">
+                                                                    </div>
+                                                                    <div class="divider"></div>
+                                                                    <div class="header">
+                                                                        <i class="fa fa-tag"></i> Standard Messages
+                                                                    </div>
+                                                                    <div class="scrolling menu">
+                                                                        <div class="item" data-value="important">
+                                                                            Important
                                                                         </div>
-                                                                        <div class="divider"></div>
-                                                                        <div class="header">
-                                                                            <i class="fa fa-tag"></i> Standard Messages
+                                                                        <div class="item" data-value="announcement">
+                                                                            Announcement
                                                                         </div>
-                                                                        <div class="scrolling menu">
-                                                                            <div class="item" data-value="important">
-                                                                                Important
-                                                                            </div>
-                                                                            <div class="item" data-value="announcement">
-                                                                                Announcement
-                                                                            </div>
-                                                                            <div class="item" data-value="cannotfix">
-                                                                                Cannot Fix
-                                                                            </div>
-                                                                            <div class="item" data-value="news">
-                                                                                News
-                                                                            </div>
+                                                                        <div class="item" data-value="cannotfix">
+                                                                            Cannot Fix
+                                                                        </div>
+                                                                        <div class="item" data-value="news">
+                                                                            News
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="inline-message">
-                                                            <td colspan="8">
-                                                                <input type="text" placeholder="Type your message">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>4</td>
-                                                            <td>A0222</td>
-                                                            <td>Salmonella pneumonia</td>
-                                                            <td>RXHCC19</td>
-                                                            <td>Dr Tam</td>
-                                                            <td>
-                                                                <div class="ui checkbox">
-                                                                    <input type="checkbox" name="public">
-                                                                    <label></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <button type="button" class="icon show-message" title="Edit">
-                                                                    <span class="icon-remark"></span>
-                                                                    </button>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <div class="ui floating labeled icon dropdown button is-selected">
-                                                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="inline-message">
+                                                        <td colspan="8">
+                                                            <input type="text" placeholder="Type your message">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>A0222</td>
+                                                        <td>Salmonella pneumonia</td>
+                                                        <td>RXHCC19</td>
+                                                        <td>Dr Tam</td>
+                                                        <td>
+                                                            <div class="ui checkbox">
+                                                                <input type="checkbox" name="public">
+                                                                <label></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <button type="button" class="icon show-message" title="Edit">
+                                                                <span class="icon-remark"></span>
+                                                            </button>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <div class="ui floating labeled icon dropdown button is-selected">
+                                                                <i class="fa fa-list" aria-hidden="true"></i>
 
-                                                                    <div class="menu">
-                                                                        <div class="ui icon search input">
-                                                                            <i class="fa fa-search"></i>
-                                                                            <input type="text" placeholder="Search tags...">
+                                                                <div class="menu">
+                                                                    <div class="ui icon search input">
+                                                                        <i class="fa fa-search"></i>
+                                                                        <input type="text" placeholder="Search tags...">
+                                                                    </div>
+                                                                    <div class="divider"></div>
+                                                                    <div class="header">
+                                                                        <i class="fa fa-tag"></i> Standard Messages
+                                                                    </div>
+                                                                    <div class="scrolling menu">
+                                                                        <div class="item" data-value="important">
+                                                                            Important
                                                                         </div>
-                                                                        <div class="divider"></div>
-                                                                        <div class="header">
-                                                                            <i class="fa fa-tag"></i> Standard Messages
+                                                                        <div class="item" data-value="announcement">
+                                                                            Announcement
                                                                         </div>
-                                                                        <div class="scrolling menu">
-                                                                            <div class="item" data-value="important">
-                                                                                Important
-                                                                            </div>
-                                                                            <div class="item" data-value="announcement">
-                                                                                Announcement
-                                                                            </div>
-                                                                            <div class="item" data-value="cannotfix">
-                                                                                Cannot Fix
-                                                                            </div>
-                                                                            <div class="item" data-value="news">
-                                                                                News
-                                                                            </div>
+                                                                        <div class="item" data-value="cannotfix">
+                                                                            Cannot Fix
+                                                                        </div>
+                                                                        <div class="item" data-value="news">
+                                                                            News
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="inline-message">
-                                                            <td colspan="8">
-                                                                <input type="text" placeholder="Type your message">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>5</td>
-                                                            <td>A0222</td>
-                                                            <td>Salmonella pneumonia</td>
-                                                            <td>RXHCC19</td>
-                                                            <td>Dr Tam</td>
-                                                            <td>
-                                                                <div class="ui checkbox">
-                                                                    <input type="checkbox" name="public">
-                                                                    <label></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <button type="button" class="icon show-message" title="Edit">
-                                                                    <span class="icon-remark"></span>
-                                                                    </button>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <div class="ui floating labeled icon dropdown button is-selected">
-                                                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="inline-message">
+                                                        <td colspan="8">
+                                                            <input type="text" placeholder="Type your message">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>A0222</td>
+                                                        <td>Salmonella pneumonia</td>
+                                                        <td>RXHCC19</td>
+                                                        <td>Dr Tam</td>
+                                                        <td>
+                                                            <div class="ui checkbox">
+                                                                <input type="checkbox" name="public">
+                                                                <label></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <button type="button" class="icon show-message" title="Edit">
+                                                                <span class="icon-remark"></span>
+                                                            </button>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <div class="ui floating labeled icon dropdown button is-selected">
+                                                                <i class="fa fa-list" aria-hidden="true"></i>
 
-                                                                    <div class="menu">
-                                                                        <div class="ui icon search input">
-                                                                            <i class="fa fa-search"></i>
-                                                                            <input type="text" placeholder="Search tags...">
+                                                                <div class="menu">
+                                                                    <div class="ui icon search input">
+                                                                        <i class="fa fa-search"></i>
+                                                                        <input type="text" placeholder="Search tags...">
+                                                                    </div>
+                                                                    <div class="divider"></div>
+                                                                    <div class="header">
+                                                                        <i class="fa fa-tag"></i> Standard Messages
+                                                                    </div>
+                                                                    <div class="scrolling menu">
+                                                                        <div class="item" data-value="important">
+                                                                            Important
                                                                         </div>
-                                                                        <div class="divider"></div>
-                                                                        <div class="header">
-                                                                            <i class="fa fa-tag"></i> Standard Messages
+                                                                        <div class="item" data-value="announcement">
+                                                                            Announcement
                                                                         </div>
-                                                                        <div class="scrolling menu">
-                                                                            <div class="item" data-value="important">
-                                                                                Important
-                                                                            </div>
-                                                                            <div class="item" data-value="announcement">
-                                                                                Announcement
-                                                                            </div>
-                                                                            <div class="item" data-value="cannotfix">
-                                                                                Cannot Fix
-                                                                            </div>
-                                                                            <div class="item" data-value="news">
-                                                                                News
-                                                                            </div>
+                                                                        <div class="item" data-value="cannotfix">
+                                                                            Cannot Fix
+                                                                        </div>
+                                                                        <div class="item" data-value="news">
+                                                                            News
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="inline-message">
-                                                            <td colspan="8">
-                                                                <input type="text" placeholder="Type your message">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>6</td>
-                                                            <td>A0222</td>
-                                                            <td>Salmonella pneumonia</td>
-                                                            <td>RXHCC19</td>
-                                                            <td>Dr Tam</td>
-                                                            <td>
-                                                                <div class="ui checkbox">
-                                                                    <input type="checkbox" name="public">
-                                                                    <label></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <button type="button" class="icon show-message" title="Edit">
-                                                                    <span class="icon-remark"></span>
-                                                                    </button>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <div class="ui floating labeled icon dropdown button is-selected">
-                                                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="inline-message">
+                                                        <td colspan="8">
+                                                            <input type="text" placeholder="Type your message">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>A0222</td>
+                                                        <td>Salmonella pneumonia</td>
+                                                        <td>RXHCC19</td>
+                                                        <td>Dr Tam</td>
+                                                        <td>
+                                                            <div class="ui checkbox">
+                                                                <input type="checkbox" name="public">
+                                                                <label></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <button type="button" class="icon show-message" title="Edit">
+                                                                <span class="icon-remark"></span>
+                                                            </button>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <div class="ui floating labeled icon dropdown button is-selected">
+                                                                <i class="fa fa-list" aria-hidden="true"></i>
 
-                                                                    <div class="menu">
-                                                                        <div class="ui icon search input">
-                                                                            <i class="fa fa-search"></i>
-                                                                            <input type="text" placeholder="Search tags...">
+                                                                <div class="menu">
+                                                                    <div class="ui icon search input">
+                                                                        <i class="fa fa-search"></i>
+                                                                        <input type="text" placeholder="Search tags...">
+                                                                    </div>
+                                                                    <div class="divider"></div>
+                                                                    <div class="header">
+                                                                        <i class="fa fa-tag"></i> Standard Messages
+                                                                    </div>
+                                                                    <div class="scrolling menu">
+                                                                        <div class="item" data-value="important">
+                                                                            Important
                                                                         </div>
-                                                                        <div class="divider"></div>
-                                                                        <div class="header">
-                                                                            <i class="fa fa-tag"></i> Standard Messages
+                                                                        <div class="item" data-value="announcement">
+                                                                            Announcement
                                                                         </div>
-                                                                        <div class="scrolling menu">
-                                                                            <div class="item" data-value="important">
-                                                                                Important
-                                                                            </div>
-                                                                            <div class="item" data-value="announcement">
-                                                                                Announcement
-                                                                            </div>
-                                                                            <div class="item" data-value="cannotfix">
-                                                                                Cannot Fix
-                                                                            </div>
-                                                                            <div class="item" data-value="news">
-                                                                                News
-                                                                            </div>
+                                                                        <div class="item" data-value="cannotfix">
+                                                                            Cannot Fix
+                                                                        </div>
+                                                                        <div class="item" data-value="news">
+                                                                            News
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="inline-message">
-                                                            <td colspan="8">
-                                                                <input type="text" placeholder="Type your message">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>7</td>
-                                                            <td>A0222</td>
-                                                            <td>Salmonella pneumonia</td>
-                                                            <td>RXHCC19</td>
-                                                            <td>Dr Tam</td>
-                                                            <td>
-                                                                <div class="ui checkbox">
-                                                                    <input type="checkbox" name="public">
-                                                                    <label></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <button type="button" class="icon show-message" title="Edit">
-                                                                    <span class="icon-remark"></span>
-                                                                    </button>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <div class="ui floating labeled icon dropdown button is-selected">
-                                                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="inline-message">
+                                                        <td colspan="8">
+                                                            <input type="text" placeholder="Type your message">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>A0222</td>
+                                                        <td>Salmonella pneumonia</td>
+                                                        <td>RXHCC19</td>
+                                                        <td>Dr Tam</td>
+                                                        <td>
+                                                            <div class="ui checkbox">
+                                                                <input type="checkbox" name="public">
+                                                                <label></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <button type="button" class="icon show-message" title="Edit">
+                                                                <span class="icon-remark"></span>
+                                                            </button>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <div class="ui floating labeled icon dropdown button is-selected">
+                                                                <i class="fa fa-list" aria-hidden="true"></i>
 
-                                                                    <div class="menu">
-                                                                        <div class="ui icon search input">
-                                                                            <i class="fa fa-search"></i>
-                                                                            <input type="text" placeholder="Search tags...">
+                                                                <div class="menu">
+                                                                    <div class="ui icon search input">
+                                                                        <i class="fa fa-search"></i>
+                                                                        <input type="text" placeholder="Search tags...">
+                                                                    </div>
+                                                                    <div class="divider"></div>
+                                                                    <div class="header">
+                                                                        <i class="fa fa-tag"></i> Standard Messages
+                                                                    </div>
+                                                                    <div class="scrolling menu">
+                                                                        <div class="item" data-value="important">
+                                                                            Important
                                                                         </div>
-                                                                        <div class="divider"></div>
-                                                                        <div class="header">
-                                                                            <i class="fa fa-tag"></i> Standard Messages
+                                                                        <div class="item" data-value="announcement">
+                                                                            Announcement
                                                                         </div>
-                                                                        <div class="scrolling menu">
-                                                                            <div class="item" data-value="important">
-                                                                                Important
-                                                                            </div>
-                                                                            <div class="item" data-value="announcement">
-                                                                                Announcement
-                                                                            </div>
-                                                                            <div class="item" data-value="cannotfix">
-                                                                                Cannot Fix
-                                                                            </div>
-                                                                            <div class="item" data-value="news">
-                                                                                News
-                                                                            </div>
+                                                                        <div class="item" data-value="cannotfix">
+                                                                            Cannot Fix
+                                                                        </div>
+                                                                        <div class="item" data-value="news">
+                                                                            News
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="inline-message">
-                                                            <td colspan="8">
-                                                                <input type="text" placeholder="Type your message">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>8</td>
-                                                            <td>A0222</td>
-                                                            <td>Salmonella pneumonia</td>
-                                                            <td>RXHCC19</td>
-                                                            <td>Dr Tam</td>
-                                                            <td>
-                                                                <div class="ui checkbox">
-                                                                    <input type="checkbox" name="public">
-                                                                    <label></label>
-                                                                </div>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <button type="button" class="icon show-message" title="Edit">
-                                                                    <span class="icon-remark"></span>
-                                                                    </button>
-                                                            </td>
-                                                            <td class="text-left">
-                                                                <div class="ui floating labeled icon dropdown button is-selected">
-                                                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="inline-message">
+                                                        <td colspan="8">
+                                                            <input type="text" placeholder="Type your message">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>A0222</td>
+                                                        <td>Salmonella pneumonia</td>
+                                                        <td>RXHCC19</td>
+                                                        <td>Dr Tam</td>
+                                                        <td>
+                                                            <div class="ui checkbox">
+                                                                <input type="checkbox" name="public">
+                                                                <label></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <button type="button" class="icon show-message" title="Edit">
+                                                                <span class="icon-remark"></span>
+                                                            </button>
+                                                        </td>
+                                                        <td class="text-left">
+                                                            <div class="ui floating labeled icon dropdown button is-selected">
+                                                                <i class="fa fa-list" aria-hidden="true"></i>
 
-                                                                    <div class="menu">
-                                                                        <div class="ui icon search input">
-                                                                            <i class="fa fa-search"></i>
-                                                                            <input type="text" placeholder="Search tags...">
+                                                                <div class="menu">
+                                                                    <div class="ui icon search input">
+                                                                        <i class="fa fa-search"></i>
+                                                                        <input type="text" placeholder="Search tags...">
+                                                                    </div>
+                                                                    <div class="divider"></div>
+                                                                    <div class="header">
+                                                                        <i class="fa fa-tag"></i> Standard Messages
+                                                                    </div>
+                                                                    <div class="scrolling menu">
+                                                                        <div class="item" data-value="important">
+                                                                            Important
                                                                         </div>
-                                                                        <div class="divider"></div>
-                                                                        <div class="header">
-                                                                            <i class="fa fa-tag"></i> Standard Messages
+                                                                        <div class="item" data-value="announcement">
+                                                                            Announcement
                                                                         </div>
-                                                                        <div class="scrolling menu">
-                                                                            <div class="item" data-value="important">
-                                                                                Important
-                                                                            </div>
-                                                                            <div class="item" data-value="announcement">
-                                                                                Announcement
-                                                                            </div>
-                                                                            <div class="item" data-value="cannotfix">
-                                                                                Cannot Fix
-                                                                            </div>
-                                                                            <div class="item" data-value="news">
-                                                                                News
-                                                                            </div>
+                                                                        <div class="item" data-value="cannotfix">
+                                                                            Cannot Fix
+                                                                        </div>
+                                                                        <div class="item" data-value="news">
+                                                                            News
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="inline-message">
-                                                            <td colspan="8">
-                                                                <input type="text" placeholder="Type your message">
-                                                            </td>
-                                                        </tr>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="inline-message">
+                                                        <td colspan="8">
+                                                            <input type="text" placeholder="Type your message">
+                                                        </td>
+                                                    </tr>
                                                     </tbody>
-                                                </table>
+                                                    </table>
+                                                </div>
                                                 <div class="add-claim-section">
                                                     <div class="ui form">
                                                         <div class="fields">
@@ -715,9 +717,10 @@
                                                 <div class="cpt-header">
                                                     <h2>CPT Code</h2>
                                                 </div>
-                                                <div class="card-body table-responsive">
-                                                    <table class="table">
-                                                        <thead>
+                                                <div class="card-body">
+                                                    <div class="cpt-wrap-table table-responsive">
+                                                        <table class="table">
+                                                            <thead>
                                                             <tr>
                                                                 <th>#</th>
                                                                 <th>CPT Code</th>
@@ -725,8 +728,8 @@
                                                                 <th>Modifiers</th>
                                                                 <th>Comment</th>
                                                             </tr>
-                                                        </thead>
-                                                        <tbody>
+                                                            </thead>
+                                                            <tbody>
                                                             <tr>
                                                                 <td>1</td>
                                                                 <td>A0222</td>
@@ -743,8 +746,9 @@
                                                                     <input type="text" placeholder="Type your message">
                                                                 </td>
                                                             </tr>
-                                                        </tbody>
-                                                    </table>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                     <div class="add-claim-section">
                                                         <div class="ui form">
                                                             <div class="fields">
