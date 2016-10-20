@@ -971,6 +971,22 @@ button.icon [class*=" icon-"] {
     display: inline-block;
 }
 
+.add-section .edit-row .ui.button.is-active{
+    position: relative;
+}
+
+.add-section .edit-row .ui.button.is-active:after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ff5b5b;
+    top: -1px;
+    right: 0px;
+}
+
 .add-section .edit-row .ui.button:hover,
 .add-section .edit-row .ui.button:focus {
     background-color: #5e5e5e;
