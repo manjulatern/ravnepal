@@ -1481,9 +1481,6 @@ button.icon [class*=" icon-"] {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
@@ -1568,4 +1565,182 @@ button.icon [class*=" icon-"] {
     h3 {
         page-break-after: avoid;
     }
+}
+
+
+@media only screen and (min-width: 1600px) {
+   .main-container {
+       max-width: 1600px;
+       padding: 0 20px;
+   }
+
+    .profile-member-block .card {
+        padding: 30px 20px;
+    }
+
+    .profile-member-block .card .member-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .dob {
+        font-size: 18px;
+    }
+
+    .cannot-review-section {
+        margin: 20px 0;
+    }
+
+    .profile-member-block [class^="icon-"], .profile-member-block [class*=" icon-"] {
+        font-size: 16px;
+    }
+
+    .profile-member-block .provider-title {
+        font-size: 16px;
+    }
+
+    .main-container.fullscreen .profile-member-block .card {
+        text-align: center;
+    }
+
+    .cannot-review-section .standard-message {
+        padding: 25px 20px;
+    }
+
+    .standard-message .ui.form {
+        height: 45px;
+    }
+
+    .standard-message .field strong {
+        font-size: 16px;
+    }
+
+    .standard-message .save-icon {
+        background-size: 44px;
+        width: 45px;
+    }
+
+    .ui.form .review-select {
+        height: 30px;
+    }
+
+    .ui.form .review-select .ui.selection.dropdown {
+        padding: 2px 10px 0;
+        font-size: 16px;
+        line-height: 24px;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+    .standard-message .ui.form .fields input {
+        font-size: 16px;
+    }
+
+    .card .card-header {
+        padding: 20px;
+    }
+
+    .card-header .add-row {
+        right: 15px;
+        top: 12px;
+    }
+
+
+    .card .card-header h2 {
+        font-size: 24px;
+    }
+
+    .card-header .add-row {
+        right: 15px;
+        top: 12px;
+    }
+
+    .card-header .add-row .btn {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .card-container .ui.styled.accordion .title {
+        height: 50px;
+        padding: 20px;
+    }
+
+    .claim-title-inner h2 {
+        font-size: 18px;
+        margin: 0 0 0 10px;
+        line-height: 30px;
+    }
+
+    .card-container .ui.accordion .title .dropdown.icon {
+        margin-top: 0;
+    }
+
+    .add-section {
+        top: 13px;
+        right: 20px;
+    }
+
+    .add-section .status-wrap {
+        margin-right: 35px;
+        margin-top: 4px;
+    }
+
+    .status-wrap .ui.checkbox label {
+        font-size: 16px;
+    }
+
+    .table > thead > tr > th {
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+        padding: 15px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .add-claim-section {
+        padding: 30px;
+    }
+
+    .add-claim-section .ui.form input[type=text] {
+        font-size: 14px;
+        height: 50px;
+    }
+
+    .add-claim-section .ui.form .fields .field:first-child {
+        width: 24%;
+    }
+
+    .add-claim-section .ui.form .fields:last-child .field:nth-child(2) {
+        width: 45%;
+    }
+
+    .add-claim-section .ui.form .ui.form .fields:last-child .field {
+        width: 20%;
+    }
+
+    .add-claim-section .ui.button {
+        padding: 13px 30px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: 0;
+    }
+
+    .cpt-header h2 {
+        font-size: 20px;
+        padding: 20px 30px;
+    }
+
+    .completion-section .btn {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    .fullscreen .table-chart-container {
+        padding:0 20px;
+    }
+
+
 }
