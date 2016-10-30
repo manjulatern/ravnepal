@@ -640,6 +640,7 @@ button, input, select, textarea {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    table-layout: fixed;
 }
 
 pre code, table {
@@ -691,6 +692,32 @@ pre code, table {
 .table > thead:first-child > tr:first-child > td,
 .table > thead:first-child > tr:first-child > th {
     border-top: 0;
+}
+
+.table > thead:first-child > tr > th:nth-child(1) {
+    width: 85px;
+}
+
+.table > thead:first-child > tr > th:nth-child(2) {
+    width: 100px;
+}
+
+.table > thead:first-child > tr > th:nth-child(3) {
+    width: 150px;
+}
+
+.table > thead:first-child > tr > th:nth-child(4) {
+    width: 80px;
+}
+
+.cpt-wrap .table > thead:first-child > tr > th:nth-child(4) {
+    width: 215px;
+}
+
+.cpt-wrap .table > tbody > tr > td:nth-child(4) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .add-row {
@@ -1338,6 +1365,21 @@ button.icon [class*=" icon-"] {
 .standard-message .ui.form .fields button {
     height: 100%;
     font-size: 14px;
+}
+
+.standard-message .ui.form .fields input {
+    width: 85%;
+}
+
+.standard-message .save-icon {
+    background: url("../img/save.png") no-repeat;
+    border: none;
+    text-indent: -9999px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 10px;
+    background-size: 36px;
+    width: 36px;
 }
 
 .standard-message .ui.form .fields .field small {
