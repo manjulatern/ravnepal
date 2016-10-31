@@ -16,14 +16,6 @@ html {
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -225,14 +217,14 @@ button, input, select, textarea {
 .coding {
     width: 60%;
     float: right;
-    margin-top: 10px;
+    margin-top: 20px;
     display: inline-block;
 }
 
 .chart-image {
     width: 40%;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
     float: left;
 }
 
@@ -374,7 +366,7 @@ button, input, select, textarea {
 }
 
 .profile-member-block .card {
-    padding: 15px 20px 20px;
+    padding: 15px 10px;
     overflow: hidden;
     position: relative;
 }
@@ -425,6 +417,12 @@ button, input, select, textarea {
     border-radius: 4px;
 }
 
+.fullscreen .card-body .inline-message input[type="text"] {
+    font-size: 14px;
+    width: 90%;
+    height: 32px;
+}
+
 .inline-message {
     display: none;
 }
@@ -438,11 +436,21 @@ button, input, select, textarea {
     display: inline-block;
 }
 
+.fullscreen .card-body .inline-message input[type="text"] {
+
+}
+
 .card-body .inline-message .ui.green.button {
     padding: 3px 10px;
     margin-left: 10px;
     font-size: 14px;
     line-height: 20px;
+}
+
+.fullscreen .card-body .inline-message .ui.green.button {
+    padding: 3px 15px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .inline-message td {
@@ -632,7 +640,7 @@ button, input, select, textarea {
 .table-responsive {
     min-height: .01%;
     border: 0;
-    max-height: 450px;
+    max-height: 400px;
     margin-top: 0px;
     overflow-x: auto;
 }
@@ -682,7 +690,7 @@ pre code, table {
 .table > tfoot > tr > th:first-child,
 .table > thead > tr > td:first-child,
 .table > thead > tr > th:first-child {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .table > caption + thead > tr:first-child > td,
@@ -694,24 +702,34 @@ pre code, table {
     border-top: 0;
 }
 
-.table > thead:first-child > tr > th:nth-child(1) {
-    width: 85px;
+.claim-wrap .table > thead:first-child > tr > th:nth-child(1),
+.cpt-wrap .table > thead:first-child > tr > th:nth-child(1){
+    width: 6%;
 }
 
-.table > thead:first-child > tr > th:nth-child(2) {
-    width: 100px;
+.claim-wrap .table > thead:first-child > tr > th:nth-child(2){
+    width: 10%;
 }
 
-.table > thead:first-child > tr > th:nth-child(3) {
-    width: 150px;
+.cpt-wrap .table > thead:first-child > tr > th:nth-child(2){
+    width: 11%;
 }
 
-.table > thead:first-child > tr > th:nth-child(4) {
-    width: 80px;
+.claim-wrap .table > thead:first-child > tr > th:nth-child(3),
+.cpt-wrap .table > thead:first-child > tr > th:nth-child(3) {
+    width: 25%;
+}
+
+.claim-wrap .table > thead:first-child > tr > th:nth-child(4) {
+    width: 10%;
 }
 
 .cpt-wrap .table > thead:first-child > tr > th:nth-child(4) {
-    width: 215px;
+    width: 38%;
+}
+
+.claim-wrap .table > thead:first-child > tr > th:nth-child(5) {
+    width: 18%;
 }
 
 .cpt-wrap .table > tbody > tr > td:nth-child(4) {
@@ -813,7 +831,7 @@ button.icon [class*=" icon-"] {
 }
 
 .card-container .ui.styled.accordion .content {
-    padding: 5px 0;
+    padding: 0;
 }
 
 .cpt-header h2 {
@@ -827,6 +845,12 @@ button.icon [class*=" icon-"] {
 .add-section .ui.toggle.checkbox {
     float: left;
     margin-top: 4px;
+}
+
+.claim-wrap .table > tbody > tr > td:nth-child(3){
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .claim-wrap .ui.toggle.checkbox label:after,
@@ -876,11 +900,10 @@ button.icon [class*=" icon-"] {
 .fullscreen .coding {
     width: 100%;
     float: none;
-    margin-top: 10px;
 }
 
 .fullscreen .profile-member-block {
-    margin: 0 auto;
+    margin: 20px;
 }
 
 .profile-member-block .card .member-title {
@@ -983,10 +1006,6 @@ button.icon [class*=" icon-"] {
 
 .fullscreen .table-card-wrapper .completion-section {
     padding: 10px 30px;
-}
-
-.fullscreen .card-container .ui.styled.accordion .content {
-    padding: 0;
 }
 
 .fullscreen .table-responsive {
@@ -1201,8 +1220,28 @@ button.icon [class*=" icon-"] {
     border: none;
 }
 
+.add-claim-section .ui.form .fields>.field:first-child {
+    width: 25%;
+}
+
 .add-claim-section .ui.form .fields:last-child .field:nth-child(2) {
-    width: 290px;
+    width: 60%;
+}
+
+.add-claim-section .ui.form .fields:last-child .field:nth-child(3) {
+    width: 40%;
+}
+
+.cpt-wrap .add-claim-section .ui.form .fields>.field:first-child {
+    width: 40%;
+}
+
+.cpt-wrap .add-claim-section .ui.form .fields:last-child .field:nth-child(2) {
+    width: 50%;
+}
+
+.cpt-wrap .add-claim-section .ui.form .fields:last-child .field:nth-child(4) {
+    width: 40%;
 }
 
 .add-claim-section .ui.form input[type=text] {
@@ -1325,6 +1364,7 @@ button.icon [class*=" icon-"] {
 
 .claim-title-inner h2 {
     font-size: 14px;
+    margin: 0;
 }
 
 .ui-datepicker .ui-datepicker-title {
@@ -1401,22 +1441,9 @@ button.icon [class*=" icon-"] {
     width: 70%;
 }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
 .hidden {
     display: none !important;
 }
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
 
 .visuallyhidden {
     border: 0;
@@ -1429,12 +1456,6 @@ button.icon [class*=" icon-"] {
     width: 1px;
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -1445,25 +1466,9 @@ button.icon [class*=" icon-"] {
     width: auto;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
 .invisible {
     visibility: hidden;
 }
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
 
 .clearfix:before,
 .clearfix:after {
@@ -1475,96 +1480,8 @@ button.icon [class*=" icon-"] {
     clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important;
-        /* Black prints faster:
-                                          http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+.fullscreen .add-claim-section {
+    padding: 10px 20px 10px 30px;
 }
 
 
@@ -1695,13 +1612,13 @@ button.icon [class*=" icon-"] {
     }
 
     .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
-        padding: 15px;
+        padding: 10px;
         font-size: 16px;
         line-height: 24px;
     }
 
     .add-claim-section {
-        padding: 30px;
+        padding: 15px 30px;
     }
 
     .add-claim-section .ui.form input[type=text] {
@@ -1740,6 +1657,17 @@ button.icon [class*=" icon-"] {
 
     .fullscreen .table-chart-container {
         padding:0 20px;
+    }
+
+    .card-body input[type="text"] {
+        font-size: 14px;
+        height: 36px;
+    }
+
+    .card-body .inline-message .ui.green.button {
+        padding: 5px 15px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
 
