@@ -1,0 +1,1673 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CoderDesign</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/css/jqueryui-editable.css"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="./public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/css/semantic.min.css">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/app.css">
+    <script src="./public/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="claim-validation-block">
+
+<header class="main-header ">
+    <div class="main-container">
+        <div class="logo-wrap">
+            <a href="index.html">CoderConnect</a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <div class="ui inline dropdown" tabindex="0">
+                        <span>Previous Designs</span>
+                        <i class="dropdown icon" tabindex="0">
+                            <div class="menu" tabindex="-1"></div>
+                        </i>
+
+                        <div class="menu" tabindex="-1">
+                            <div class="item">
+                                <a href="index.html">Latest</a>
+                            </div>
+                            <div class="item">
+                                <a href="index1.html">Sep 21, 2016</a>
+                            </div>
+                            <div class="item">
+                                <a href="index2.html">Sep 22, 2016</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>About</li>
+                <li>Setting</li>
+                <li>
+                    <div class="ui inline dropdown" tabindex="0">
+                        <div class="text">
+                            <img class="ui avatar image" src="./public/img/avatar/user.jpg"> Coding Member
+                        </div>
+                        <i class="dropdown icon" tabindex="0">
+                            <div class="menu" tabindex="-1"></div>
+                        </i>
+
+                        <div class="menu" tabindex="-1">
+                            <div class="item">
+                                Dashboard
+                            </div>
+                            <div class="item">
+                                My Account
+                            </div>
+                            <div class="item">
+                                Settings
+                            </div>
+                            <div class="item">
+                                Logout
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main-container">
+<div class="chart-image">
+    <div id="chart-wrapper" class="table-card-wrapper">
+        <div class="card">
+            <h2>Chart ID: 12345</h2>
+
+            <div class="resize">
+                <a href="#" id="panel-fullscreen" role="button" title="Toggle fullscreen" class="resize-icon"><span
+                        class="icon-resize"></span></a>
+            </div>
+            <div id="pdfexample" class="bill-img"></div>
+        </div>
+    </div>
+</div>
+<div class="coding">
+<div class="not-review clearfix">
+    <div class="not-review-btn">
+        <span class="review-text"><strong>Cannot Review</strong></span>
+
+        <div class="text-left">
+            <button type="button" class="icon show-review-message" title="Edit">
+                <span class="icon-remark"></span>
+            </button>
+            <div class="ui floating labeled icon dropdown button">
+                <i class="fa fa-list" aria-hidden="true"></i>
+
+                <div class="menu" tabindex="-1">
+                    <div class="ui icon search input">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="Search tags..." tabindex="0">
+                    </div>
+                    <div class="divider"></div>
+                    <div class="header">
+                        <i class="fa fa-tag"></i> Standard Messages
+                    </div>
+                    <div class="scrolling menu">
+                        <div class="item" data-value="important">
+                            Chart is incomplete
+                        </div>
+                        <div class="item" data-value="announcement">
+                            Cannot Read chart
+                        </div>
+                        <div class="item" data-value="cannotfix">
+                            Wrong Chart
+                        </div>
+                        <div class="item" data-value="news">
+                            Other reason
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inline-message-review">
+        <input type="text" placeholder="Type your message">
+    </div>
+</div>
+<div class="profile-member-block">
+    <div class="table-card-wrapper">
+        <div class="card">
+            <div>
+                <h2 class="member-title">Prithvi Adikari
+                    <span class="member-id">(ID-12345678A)</span>
+                </h2>
+
+                <p class="dob"><span class="icon-calendar"></span>Member DOB: 12-10-1998</p>
+                <h4 class="provider-title">
+                    <span class="icon-medical"></span>Dr.Tam
+                    <span class="provider-id">(NPI-12345678)</span>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cannot-review-section">
+    <div class="standard-message">
+        <div class="ui form">
+            <div class="fields">
+                <div class="field">
+                    <input type="text" placeholder="Enter comment">
+                    <button class="save-icon" type="submit">Save</button>
+                </div>
+                <div class="field">
+                                <span>
+                                    <strong>Cannot Review</strong>
+                                </span>
+
+                    <div class="review-select">
+                        <select class="ui dropdown">
+                            <option value="">Select one</option>
+                            <option value="1">Cannot read chart</option>
+                            <option value="2">Wrong chart</option>
+                            <option value="3">Incorrect Claims</option>
+                            <option value="4">Wrong doc.</option>
+                            <option value="5">Other.</option>
+                            <option value="6">Chart size is as long as this text</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="table-chart-container">
+<div class="table-card-wrapper">
+<div class="card claim-wrapper">
+</div>
+<div class="card">
+<div class="card-header">
+    <h2>Claims/Encounters</h2>
+
+    <div class="add-row">
+        <div class="comment">
+            <button class="btn btn-info ui button">
+                <i class="fa fa-comment"></i>
+            </button>
+            <div class="ui fluid popup top left transition hidden">
+                <div class="ui column divided grid">
+                    <div class="column">
+                        <div class="ui form">
+                            <div class="fields">
+                                <div class="field">
+                                    <label>Comment</label>
+                                    <textarea rows="1"></textarea>
+                                </div>
+                                <div class="field">
+                                    <input class="ui green button" type="submit" value="Submit"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add">
+            <button class="btn btn-info ui button">
+                Add Claims
+            </button>
+            <div class="ui fluid popup top left transition hidden">
+                <div class="ui column divided grid">
+                    <div class="column">
+                        <div class="ui form">
+                            <div class="fields">
+                                <div class="field form-error">
+                                    <label>DOS</label>
+                                    <input type="text" placeholder="dd/mm/yyyy"/>
+
+                                    <div class="error">Please enter correct DOS</div>
+                                </div>
+                                <div class="field">
+                                    <label>Provider</label>
+                                    <input type="text" placeholder="Provider">
+                                </div>
+                                <div class="field">
+                                    <input class="ui green button" type="submit" value="Submit"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card-container">
+<div class="ui styled accordion">
+<div class="claim-inner">
+<div class="title light-yellow">
+    <i class="dropdown icon"></i>
+</div>
+<div class="content">
+<div class="card-body">
+<div class="claim-wrap">
+<div class="claim-wrap-table table-responsive">
+<table class="table">
+<thead>
+<tr>
+    <th>#</th>
+    <th>DX Code</th>
+    <th>Description</th>
+    <th>HCC</th>
+    <th>Provider Search</th>
+    <th>Invalid</th>
+    <th>Comment</th>
+    <th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>1</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message is-selected" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button is-selected">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+        <input class="ui green button" type="submit" value="Enter">
+    </td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message is-selected" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button is-selected">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button is-selected">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button is-selected">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+<tr>
+    <td>6</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button is-selected">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+<tr>
+    <td>7</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button is-selected">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+<tr>
+    <td>8</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button is-selected">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="add-claim-section">
+    <div class="ui form">
+        <div class="fields">
+            <div class="field">
+                <div class="ui search">
+                    <div class="ui icon input">
+                        <input class="prompt" type="text" placeholder="Enter DX-CODE">
+                    </div>
+                    <div class="results"></div>
+                </div>
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Enter description">
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Enter comment">
+            </div>
+            <div class="field">
+                <input class="ui green button" type="submit" value="Add">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="cpt-wrap">
+    <div class="cpt-header">
+        <h2>CPT Code</h2>
+    </div>
+    <div class="card-body">
+        <div class="cpt-wrap-table table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>CPT Code</th>
+                    <th>Description</th>
+                    <th>Modifiers</th>
+                    <th>Comment</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>A0222</td>
+                    <td>Heart Failure Composite</td>
+                    <td>Modifier1</td>
+                    <td class="text-left">
+                        <button type="button" class="icon" title="Edit">
+                            <span class="icon-remark"></span>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="inline-message">
+                    <td colspan="8">
+                        <input type="text" placeholder="Type your message">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="add-claim-section">
+            <div class="ui form">
+                <div class="fields">
+                    <div class="field">
+                        <input type="text" placeholder="Enter CPT-Code">
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Enter description">
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Enter modifier">
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Enter comment">
+                    </div>
+                    <div class="field">
+                        <input class="ui green button" type="submit" value="Add">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="claim-title-inner">
+    <h2>Claim ID: a1b2c3d4e5f6g7h8i9j0</a> |
+        <small> DOS:<span id="dos-date" data-type="date" data-viewformat="dd/mm/yyyy" data-pk="1">01/01/2016</a> </span>
+            | Coding Date: 11/02/2016
+    </h2>
+</div>
+<div class="add-section">
+    <div class="status-wrap">
+        <div class="ui checkbox">
+            <input type="checkbox" name="example" tabindex="0" class="hidden">
+            <label>Reviewed</label>
+        </div>
+    </div>
+    <div class="edit-row comment">
+        <button class="btn ui button is-active">
+            <i class="fa fa-comment"></i>
+        </button>
+        <div class="ui fluid popup top left transition hidden">
+            <div class="ui column divided grid">
+                <div class="column">
+                    <div class="ui form">
+                        <div class="fields">
+                            <div class="field">
+                                <label>Comment</label>
+                                <textarea rows="1"></textarea>
+                            </div>
+                            <div class="field">
+                                <input class="ui green button" type="submit" value="Submit"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="claim-inner">
+<div class="title light-red">
+    <i class="dropdown icon"></i>
+</div>
+<div class="content">
+<div class="card-body table-responsive">
+<div class="claim-wrap">
+<table class="table">
+<thead>
+<tr>
+    <th>#</th>
+    <th>DX Code</th>
+    <th>Description</th>
+    <th>HCC</th>
+    <th>Provider Search</th>
+    <th>Invalid</th>
+    <th>Comment</th>
+    <th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>1</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message is-selected" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button is-selected">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message is-selected" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button is-selected">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button is-selected">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+</tbody>
+</table>
+<div class="add-claim-section">
+    <div class="ui form">
+        <div class="fields">
+            <div class="field">
+                <input type="text" placeholder="Enter DX-CODE">
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Enter description">
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Enter provider">
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Enter comment">
+            </div>
+            <div class="field">
+                <input class="ui green button" type="submit" value="Add">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="cpt-wrap">
+    <div class="cpt-header">
+        <h2>CPT Code</h2>
+    </div>
+    <div class="card-body table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>CPT Code</th>
+                <th>Description</th>
+                <th>Modifiers</th>
+                <th>Comment</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>A0222</td>
+                <td>Heart Failure Composite</td>
+                <td>Modifier1</td>
+                <td class="text-left">
+                    <button type="button" class="icon" title="Edit">
+                        <span class="icon-remark"></span>
+                    </button>
+                </td>
+            </tr>
+            <tr class="inline-message">
+                <td colspan="8">
+                    <input type="text" placeholder="Type your message">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="add-claim-section">
+            <div class="ui form">
+                <div class="fields">
+                    <div class="field">
+                        <input type="text" placeholder="Enter CPT-Code">
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Enter description">
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Enter modifier">
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Enter comment">
+                    </div>
+                    <div class="field">
+                        <input class="ui green button" type="submit" value="Add">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="claim-title-inner">
+    <h2>Claim ID: k2l2m2n2o2p2q2r2s2t2 |
+        <small> DOS:<span id="dos-date" data-type="date" data-viewformat="dd/mm/yyyy" data-pk="1">12/01/2016</span> |
+            Coding Date: 15/02/2016
+        </small>
+    </h2>
+</div>
+<div class="add-section">
+    <div class="status-wrap">
+        <div class="ui checkbox">
+            <input type="checkbox" name="example" tabindex="0" class="hidden">
+            <label>Reviewed</label>
+        </div>
+    </div>
+    <!-- <div class="indicator-wrap">
+        <label>Valid/Invalid</label>
+        <div class="ui toggle checkbox">
+            <input type="checkbox" name="public">
+        </div>
+    </div> -->
+    <div class="edit-row comment">
+        <button class="btn ui button">
+            <i class="fa fa-comment"></i>
+        </button>
+        <div class="ui fluid popup top left transition hidden">
+            <div class="ui column divided grid">
+                <div class="column">
+                    <div class="ui form">
+                        <div class="fields">
+                            <div class="field">
+                                <label>Comment</label>
+                                <textarea rows="1"></textarea>
+                            </div>
+                            <div class="field">
+                                <input class="ui green button" type="submit" value="Submit"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="claim-inner">
+<div class="title light-green">
+    <i class="dropdown icon"></i>
+</div>
+<div class="content">
+<div class="card-body table-responsive">
+<div class="claim-wrap">
+<table class="table">
+<thead>
+<tr>
+    <th>#</th>
+    <th>DX Code</th>
+    <th>Description</th>
+    <th>HCC</th>
+    <th>Provider Search</th>
+    <th>Invalid</th>
+    <th>Comment</th>
+    <th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>1</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message is-selected" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button is-selected">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message is-selected" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button is-selected">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>A0222</td>
+    <td>Salmonella pneumonia</td>
+    <td>RXHCC19</td>
+    <td>Dr Tam</td>
+    <td>
+        <div class="ui checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
+        </div>
+    </td>
+    <td class="text-left">
+        <button type="button" class="icon show-message" title="Edit">
+            <span class="icon-remark"></span>
+        </button>
+    </td>
+    <td class="text-left">
+        <div class="ui floating labeled icon dropdown button is-selected">
+            <i class="fa fa-list" aria-hidden="true"></i>
+
+            <div class="menu">
+                <div class="ui icon search input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search tags...">
+                </div>
+                <div class="divider"></div>
+                <div class="header">
+                    <i class="fa fa-tag"></i> Standard Messages
+                </div>
+                <div class="scrolling menu">
+                    <div class="item" data-value="important">
+                        Important
+                    </div>
+                    <div class="item" data-value="announcement">
+                        Announcement
+                    </div>
+                    <div class="item" data-value="cannotfix">
+                        Cannot Fix
+                    </div>
+                    <div class="item" data-value="news">
+                        News
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+<tr class="inline-message">
+    <td colspan="8">
+        <input type="text" placeholder="Type your message">
+    </td>
+</tr>
+</tbody>
+</table>
+<div class="add-claim-section">
+    <div class="ui form">
+        <div class="fields">
+            <div class="field">
+                <input type="text" placeholder="Enter DX-CODE">
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Enter description">
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Enter provider">
+            </div>
+            <div class="field">
+                <input type="text" placeholder="Enter comment">
+            </div>
+            <div class="field">
+                <input class="ui green button" type="submit" value="Add">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="cpt-wrap">
+    <div class="cpt-header">
+        <h2>CPT Code</h2>
+    </div>
+    <div class="card-body table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>CPT Code</th>
+                <th>Description</th>
+                <th>Modifiers</th>
+                <th>Comment</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>A0222</td>
+                <td>Heart Failure Composite</td>
+                <td>Modifier1</td>
+                <td class="text-left">
+                    <button type="button" class="icon" title="Edit">
+                        <span class="icon-remark"></span>
+                    </button>
+                </td>
+            </tr>
+            <tr class="inline-message">
+                <td colspan="8">
+                    <input type="text" placeholder="Type your message">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="add-claim-section">
+            <div class="ui form">
+                <div class="fields">
+                    <div class="field">
+                        <input type="text" placeholder="Enter CPT-Code">
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Enter description">
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Enter modifier">
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Enter comment">
+                    </div>
+                    <div class="field">
+                        <input class="ui green button" type="submit" value="Add">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="claim-title-inner">
+    <h2>Claim ID: u3v3w3x3y3z3a3b3c3d3 |
+        <small> DOS:<span id="dos-date" data-type="date" data-viewformat="dd/mm/yyyy" data-pk="1"> 19/01/2016</span> |
+            Coding Date: 17/02/2016
+        </small>
+    </h2>
+</div>
+<div class="add-section">
+    <div class="status-wrap">
+        <div class="ui checkbox">
+            <input type="checkbox" name="example" tabindex="0" class="hidden" checked>
+            <label>Reviewed</label>
+        </div>
+    </div>
+    <!-- <div class="indicator-wrap">
+        <label>Valid/Invalid</label>
+        <div class="ui toggle checkbox">
+            <input type="checkbox" name="public" checked>
+        </div>
+    </div> -->
+    <div class="edit-row comment">
+        <button class="btn ui button">
+            <i class="fa fa-comment"></i>
+        </button>
+        <div class="ui fluid popup top left transition hidden">
+            <div class="ui column divided grid">
+                <div class="column">
+                    <div class="ui form">
+                        <div class="fields">
+                            <div class="field">
+                                <label>Comment</label>
+                                <textarea rows="1"></textarea>
+                            </div>
+                            <div class="field">
+                                <input class="ui green button" type="submit" value="Submit"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="completion-section clearfix">
+    <div>
+        <button class="btn btn-success"><span class="icon-checkmark"></span>Coding complete</button>
+        <button class="btn btn-warn"><span class="icon-later"></span>Save for later</button>
+        <button class="btn btn-danger ui button"><i class="fa fa-times" aria-hidden="true"></i> Cannot Review</button>
+        <div class="ui fluid popup top left transition hidden">
+            <div class="ui column divided grid">
+                <div class="column">
+                    <div class="ui form">
+                        <div class="fields">
+                            <div class="field">
+                                <input type="text" placeholder="Enter comment">
+                            </div>
+                            <div class="field">
+                                <input class="ui green button" type="submit" value="Submit"/>
+                            </div>
+                            <div class="field">
+                                <div class="standard-msg">
+                                    <div class="ui bottom pointing dropdown icon button">
+                                        <i class="fa fa-file-text" aria-hidden="true"></i>
+
+                                        <div class="menu">
+                                            <div class="ui left search icon input">
+                                                <i class="fa fa-search"></i>
+                                                <input type="text" name="search" placeholder="Search issues...">
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="header">
+                                                <i class="fa fa-tag"></i> Standard Messages
+                                            </div>
+                                            <div class="item" data-value="chart-incomplete">
+                                                Chart is incomplete
+                                            </div>
+                                            <div class="item" data-value="cannot-read-chart">
+                                                Cannot Read chart
+                                            </div>
+                                            <div class="item" data-value="wrong-chart">
+                                                Wrong Chart
+                                            </div>
+                                            <div class="item" data-value="other">
+                                                Other reason
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-info">Next <span class="icon-next"></span>
+        </button>
+    </div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+<script src="./public/js/vendor/jquery-1.12.0.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/js/jqueryui-editable.min.js"></script>
+<script src="./public/js/vendor/sticky-kit.js"></script>
+<script src="./public/js/vendor/semantic.min.js"></script>
+<script src="./public/js/main.js"></script>
+<script src="./public/js/vendor/pdfobject.js"></script>
+<script>
+    PDFObject.embed("pdf/medicalbilling.pdf", "#pdfexample");
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var dxcodes = ["--DXCODE--", "DX123", "DX234", "DX456", "DX154", "DX174", "DX194", "DX019"];
+        var cptcodes = ["--CPTCODE--", "CPT123", "CPT234", "CPT456", "CPT154", "CPT174", "CPT194", "CPT019"];
+        var description = ["--Description--", "This is DX123", "This is DX234", " This is DX456", " This is DX154", "This is DX174", "This is DX194", "This is DX019"];
+        var cptdescs = ["--Description--", "This is CPT123", "This is CPT234", "This is CPT456", "This is CPT154", "This is CPT174", "This is CPT194", "This is CPT019"];
+        var doctors = ["--Providers--", "Dr. Tam", "Dr. Shyam", " Dr. Ram", "Dr. Hareram", "Dr. Radheshyam", "Dr. Manuram", "Dr. Krishna"];
+        var modifiers = ["--MODIFIERS--", "Modifier1", "Modifier2", "Modifier3"]
+        $(".dxcode").select2({
+            data: dxcodes
+        });
+        $(".description").select2({
+            data: description
+        });
+        $(".doctors").select2({
+            data: doctors
+        });
+        $(".cptcodes").select2({
+            data: cptcodes
+        });
+        $(".cpt-desc").select2({
+            data: cptdescs
+        });
+        $(".modifiers").select2({
+            data: modifiers
+        });
+    });
+
+    $(function () {
+        $("#datepicker-2").datepicker();
+    });
+
+    $(function () {
+        $("#chart-wrapper").stick_in_parent();
+    });
+
+    $(function () {
+        $.fn.editable.defaults.mode = 'inline';
+        $('#username').editable();
+        $('#dos-date').editable();
+        $('#dos-date,#code-date').editable({
+            datepicker: {
+                todayBtn: 'linked'
+            }
+        });
+    });
+</script>
+</body>
+
+</html>

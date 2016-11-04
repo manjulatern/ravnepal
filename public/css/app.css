@@ -1,0 +1,1746 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?t7g6g3");
+  src: url("..fonts/icomoon.eot?t7g6g3#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?t7g6g3") format("truetype"), url("../fonts/icomoon.woff?t7g6g3") format("woff"), url("../fonts/icomoon.svg?t7g6g3#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-medical:before {
+  content: "\e998"; }
+
+.icon-edit:before {
+  content: "\e905"; }
+
+.icon-calendar:before {
+  content: "\e953"; }
+
+.icon-remark:before {
+  content: "\e970"; }
+
+.icon-user:before {
+  content: "\e971"; }
+
+.icon-resize:before {
+  content: "\e98b"; }
+
+.icon-list:before {
+  content: "\e9bb"; }
+
+.icon-plus:before {
+  content: "\ea0a"; }
+
+.icon-checkmark:before {
+  content: "\ea10"; }
+
+.icon-later:before {
+  content: "\ea17"; }
+
+.icon-resume:before {
+  content: "\ea1c"; }
+
+.icon-next:before {
+  content: "\ea3c"; }
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+a {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  text-decoration: none; }
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 10px;
+  color: #5E5E5E;
+  background-color: #f4f4f4;
+  -moz-osx-font-smoothing: grayscale; }
+
+*, a, button, i, input {
+  -webkit-font-smoothing: antialiased; }
+
+*, :active, :focus, :hover {
+  outline: 0 !important;
+  -webkit-tap-highlight-color: transparent !important; }
+
+[role=button], a, area, button, input, label, select, summary, textarea {
+  touch-action: manipulation; }
+
+button, input, select, textarea {
+  margin: 0;
+  line-height: inherit;
+  border-radius: 0; }
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  text-decoration: none; }
+
+.btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #5bc0de; }
+
+.btn {
+  font-weight: 500;
+  outline: 0 !important;
+  border-width: 0;
+  padding: -0.4375rem 1rem; }
+
+.btn:focus, .btn:hover {
+  text-decoration: none; }
+
+.btn-info:hover {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #2aabd2; }
+
+.btn.btn-success:focus,
+.btn.btn-success:hover {
+  color: rgba(255, 255, 255, 0.87) !important;
+  background-color: #6cc788; }
+
+.btn-success {
+  background-color: #6cc788;
+  border-color: #6cc788;
+  color: #fff; }
+
+.btn-warn {
+  color: #fff;
+  background-color: #fcc100;
+  border-color: #fcc100; }
+
+.btn.warn:hover,
+.btn.warn:focus {
+  color: rgba(255, 255, 255, 0.87) !important;
+  background-color: #fcc100;
+  border-color: #fcc100; }
+
+.btn-danger.ui.button {
+  color: #fff;
+  background-color: #DB2828;
+  border-color: #DB2828;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  vertical-align: middle;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal; }
+
+.btn-danger.ui.button .fa {
+  margin-right: 5px; }
+
+.btn.warn:hover,
+.btn.warn:focus {
+  color: rgba(255, 255, 255, 0.87) !important;
+  background-color: #d01919;
+  border-color: #d01919; }
+
+.btn:not([disabled]).active,
+.btn:not([disabled]):focus,
+.btn:not([disabled]):hover {
+  box-shadow: inset 0 -10rem 0 rgba(158, 158, 158, 0.2); }
+
+.claim-validation-block {
+  /* PDF Object */
+  /**
+   * Comment and Cannot Review Section
+   */
+  /*.standard-message .ui.form .fields .ui.button.danger{
+      color: #fff;
+      background: #DB2828;
+  }
+
+  .standard-message .ui.form .fields .ui.button.danger:hover{
+      background: #f12525;
+  }*/ }
+  .claim-validation-block .coding {
+    width: 60%;
+    float: right;
+    margin-top: 20px;
+    display: inline-block; }
+  .claim-validation-block .chart-image {
+    width: 40%;
+    display: inline-block;
+    margin-top: 20px;
+    float: left; }
+  .claim-validation-block .chart-image h2 {
+    margin: 0;
+    background: #0cc2aa;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 18px; }
+  .claim-validation-block .chart-image .resize {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 15px; }
+  .claim-validation-block [class^="icon-"], .claim-validation-block [class*=" icon-"] {
+    color: #fff; }
+  .claim-validation-block .bill-img {
+    padding: 0px 0 10px; }
+  .claim-validation-block .bill-img img {
+    max-width: 100%;
+    width: 100%; }
+  .claim-validation-block .main-header {
+    width: 100%;
+    height: 60px;
+    color: white;
+    background: #0cc2aa;
+    line-height: 60px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .claim-validation-block .heads-up {
+    -webkit-transform: translateY(-6rem);
+    transform: translateY(-6rem);
+    -webkit-transform: translate3d(0, -6rem, 0);
+    transform: translate3d(0, -6rem, 0); }
+  .claim-validation-block .logo-wrap a {
+    font-size: 18px;
+    line-height: 60px;
+    color: #fff; }
+  .claim-validation-block .main-header .main-container {
+    overflow: visible;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between; }
+  .claim-validation-block .main-header .ui.dropdown .menu > .item {
+    font-size: 14px; }
+  .claim-validation-block .main-header nav {
+    font-size: 16px; }
+  .claim-validation-block .main-header nav .ui.inline.dropdown .menu {
+    right: 0;
+    top: 50px; }
+  .claim-validation-block .main-header nav ul {
+    margin: 0;
+    padding: 0; }
+  .claim-validation-block .main-header nav li {
+    display: inline-block;
+    padding: 0 30px;
+    border-left: 1px solid #0db6a0; }
+  .claim-validation-block [class^="icon-"], .claim-validation-block [class*=" icon-"] {
+    font-size: 14px;
+    margin-right: 10px; }
+  .claim-validation-block .table-chart-container,
+  .claim-validation-block .profile-member-block,
+  .claim-validation-block .cannot-review-section {
+    margin: 10px 0;
+    padding: 0 0 0 20px; }
+  .claim-validation-block .profile-member-block {
+    margin-top: 0;
+    clear: both; }
+  .claim-validation-block .table-chart-container {
+    padding-bottom: 30px; }
+  .claim-validation-block .member-title {
+    font-weight: 100;
+    margin: 0px 0 7px;
+    font-size: 22px;
+    line-height: 22px; }
+  .claim-validation-block .profile-member-block [class^="icon-"],
+  .claim-validation-block .profile-member-block [class*=" icon-"] {
+    font-size: 14px;
+    color: rgba(131, 131, 131, 0.4); }
+  .claim-validation-block .profile-member-block .chart-wrapper [class^="icon-"],
+  .claim-validation-block .profile-member-block .chart-wrapper [class*=" icon-"] {
+    margin-right: 0;
+    font-size: 12px;
+    color: #5E5E5E;
+    margin-top: 10px;
+    display: block; }
+  .claim-validation-block .dob {
+    font-size: 14px;
+    margin: 0;
+    color: rgba(99, 99, 99, 0.5); }
+  .claim-validation-block .provider-title {
+    margin: 5px 0 0; }
+  .claim-validation-block .profile-member-block .list-btn [class^="icon-"],
+  .claim-validation-block .profile-member-block .list-btn [class*=" icon-"] {
+    color: #fff; }
+  .claim-validation-block .profile-member-block .card {
+    padding: 15px 10px;
+    overflow: hidden;
+    position: relative; }
+  .claim-validation-block .list-section {
+    position: absolute;
+    bottom: 20px;
+    right: 15px; }
+  .claim-validation-block .chart-wrapper h3 {
+    margin: 5px 0 8px;
+    display: inline-block; }
+  .claim-validation-block .chart-wrapper img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  .claim-validation-block .table-chart-container .table-card-wrapper {
+    box-shadow: none; }
+  .claim-validation-block .table-chart-container .table-card-wrapper .card {
+    box-shadow: 0px 1px 1px 1px #b1b1b1; }
+  .claim-validation-block .table-card-wrapper {
+    box-shadow: 0px 1px 1px 1px #b1b1b1; }
+  .claim-validation-block .pdfobject-container {
+    height: 600px;
+    padding-bottom: 0; }
+  .claim-validation-block .card-body input[type="text"] {
+    display: block;
+    padding-left: 7px;
+    font-size: 12px;
+    width: 100%;
+    height: 28px;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px; }
+  .claim-validation-block .fullscreen .card-body .inline-message input[type="text"] {
+    font-size: 14px;
+    width: 90%;
+    height: 32px; }
+  .claim-validation-block .inline-message {
+    display: none; }
+  .claim-validation-block .inline-message.is-visible {
+    display: table-row; }
+  .claim-validation-block .card-body .inline-message input[type="text"] {
+    width: 85%;
+    display: inline-block; }
+  .claim-validation-block .card-body .inline-message .ui.green.button {
+    padding: 3px 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 20px; }
+  .claim-validation-block .fullscreen .card-body .inline-message .ui.green.button {
+    padding: 3px 15px;
+    font-size: 16px;
+    line-height: 24px; }
+  .claim-validation-block .inline-message td {
+    background: #d3d3d3; }
+  .claim-validation-block .table-card-wrapper .completion-section {
+    overflow: hidden; }
+  .claim-validation-block .completion-section {
+    margin-top: 20px; }
+  .claim-validation-block .completion-section > div:nth-child(1) {
+    float: left;
+    display: inline-block;
+    position: relative; }
+  .claim-validation-block .completion-section > div:nth-child(1) button {
+    margin-right: 10px; }
+  .claim-validation-block .completion-section > div:nth-child(1) button:last-child {
+    margin-right: 0; }
+  .claim-validation-block .completion-section > div:nth-child(2) {
+    float: right;
+    display: inline-block; }
+  .claim-validation-block .completion-section .btn {
+    font-size: 14px; }
+  .claim-validation-block .completion-section .btn-danger {
+    display: none; }
+  .claim-validation-block .completion-section .ui.bottom.right.popup {
+    right: -185px !important;
+    margin-bottom: 20px; }
+  .claim-validation-block .completion-section .ui.bottom.right.popup:before {
+    right: 0 !important;
+    left: 0 !important;
+    margin: 0 auto;
+    top: -5px !important; }
+  .claim-validation-block .standard-msg .ui.button.pointing {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    margin: 0;
+    padding: 9px 11px;
+    background-color: #f4f4f4; }
+  .claim-validation-block .standard-msg .ui.dropdown.top .menu {
+    left: auto;
+    right: -110px; }
+  .claim-validation-block .ui.form .fields .field .standard-msg .ui.input.search {
+    width: 91%; }
+  .claim-validation-block .standard-msg .ui.dropdown .menu > .header {
+    margin: 10px 0;
+    font-size: 12px; }
+  .claim-validation-block .standard-msg .ui.bottom.pointing.dropdown > .menu {
+    left: -117px; }
+  .claim-validation-block .standard-msg .ui.button.pointing .fa {
+    color: #0cc2aa; }
+  .claim-validation-block .standard-msg .ui.button.pointing .search.input .fa {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+  .claim-validation-block .completion-section .ui.form .fields .field:first-child {
+    width: 360px; }
+  .claim-validation-block .completion-section .ui.form .fields .field:first-child input {
+    padding: 8px;
+    font-size: 14px; }
+  .claim-validation-block .completion-section .ui.form .fields .field input.ui.button.green {
+    margin: 0;
+    padding: 8px 15px; }
+  .claim-validation-block .card {
+    background: #fff;
+    margin-bottom: 30px; }
+  .claim-validation-block .card-main {
+    background: #fff;
+    margin-bottom: 3px;
+    position: relative;
+    padding: 8px 20px;
+    line-height: 100%; }
+  .claim-validation-block .card:last-child {
+    margin-bottom: 0; }
+  .claim-validation-block .card, .claim-validation-block .card .card-header {
+    position: relative; }
+  .claim-validation-block .card, .claim-validation-block .mini-charts-item {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+  .claim-validation-block .card .card-header {
+    /*cursor: all-scroll;*/
+    margin: 0;
+    background: #0cc2aa;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 18px; }
+  .claim-validation-block .card .card-header h2 {
+    margin: 0;
+    line-height: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    display: inline-block; }
+  .claim-validation-block .resize {
+    display: inline-block;
+    float: right; }
+  .claim-validation-block .resize-icon:hover .icon-resize:before {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    font-size: 16px; }
+  .claim-validation-block .chart-image.panel-fullscreen {
+    display: block;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto; }
+  .claim-validation-block .card .card-header .resize [class^="icon-"],
+  .claim-validation-block .card .card-header .resize [class*=" icon-"] {
+    margin-right: 0;
+    margin-top: 7px;
+    display: block; }
+  .claim-validation-block .card .card-header h2 small {
+    display: inline-block;
+    margin-top: 8px;
+    color: #AEAEAE;
+    line-height: 160%;
+    font-size: 12px;
+    margin-left: 10px; }
+  .claim-validation-block .table-responsive {
+    min-height: .01%;
+    border: 0;
+    max-height: 400px;
+    margin-top: 0px;
+    overflow-x: auto; }
+  .claim-validation-block table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed; }
+  .claim-validation-block pre code, .claim-validation-block table {
+    background-color: transparent; }
+  .claim-validation-block .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0; }
+  .claim-validation-block .table > tbody > tr > td,
+  .claim-validation-block .table > tbody > tr > th,
+  .claim-validation-block .table > tfoot > tr > td,
+  .claim-validation-block .table > tfoot > tr > th,
+  .claim-validation-block .table > thead > tr > td,
+  .claim-validation-block .table > thead > tr > th {
+    padding: 5px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-top: 1px solid #F5F5F5; }
+  .claim-validation-block .table > thead > tr > th {
+    background-color: #fff;
+    vertical-align: middle;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 0px solid #F5F5F5;
+    border-width: 1px;
+    text-transform: uppercase;
+    text-align: left; }
+  .claim-validation-block .table > tbody > tr > td:first-child,
+  .claim-validation-block .table > tbody > tr > th:first-child,
+  .claim-validation-block .table > tfoot > tr > td:first-child,
+  .claim-validation-block .table > tfoot > tr > th:first-child,
+  .claim-validation-block .table > thead > tr > td:first-child,
+  .claim-validation-block .table > thead > tr > th:first-child {
+    padding-left: 20px; }
+  .claim-validation-block .table > caption + thead > tr:first-child > td,
+  .claim-validation-block .table > caption + thead > tr:first-child > th,
+  .claim-validation-block .table > colgroup + thead > tr:first-child > td,
+  .claim-validation-block .table > colgroup + thead > tr:first-child > th,
+  .claim-validation-block .table > thead:first-child > tr:first-child > td,
+  .claim-validation-block .table > thead:first-child > tr:first-child > th {
+    border-top: 0; }
+  .claim-validation-block .claim-wrap .table > thead:first-child > tr > th:nth-child(1),
+  .claim-validation-block .cpt-wrap .table > thead:first-child > tr > th:nth-child(1) {
+    width: 6%; }
+  .claim-validation-block .claim-wrap .table > thead:first-child > tr > th:nth-child(2) {
+    width: 10%; }
+  .claim-validation-block .cpt-wrap .table > thead:first-child > tr > th:nth-child(2) {
+    width: 11%; }
+  .claim-validation-block .claim-wrap .table > thead:first-child > tr > th:nth-child(3),
+  .claim-validation-block .cpt-wrap .table > thead:first-child > tr > th:nth-child(3) {
+    width: 25%; }
+  .claim-validation-block .claim-wrap .table > thead:first-child > tr > th:nth-child(4) {
+    width: 10%; }
+  .claim-validation-block .cpt-wrap .table > thead:first-child > tr > th:nth-child(4) {
+    width: 38%; }
+  .claim-validation-block .claim-wrap .table > thead:first-child > tr > th:nth-child(5) {
+    width: 18%; }
+  .claim-validation-block .cpt-wrap .table > tbody > tr > td:nth-child(4) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .claim-validation-block .add-row {
+    background-color: rgba(0, 0, 0, 0.035);
+    border-top: 1px solid rgba(120, 130, 140, 0.13);
+    padding: 5px 0 5px 30px; }
+  .claim-validation-block .add-row .btn {
+    padding: 7px 10px 7px 10px;
+    font-size: 14px; }
+  .claim-validation-block .add-row input[type="submit"].green,
+  .claim-validation-block .edit-row input[type="submit"].green {
+    margin-top: 27px;
+    margin-right: 0; }
+  .claim-validation-block .add-row .ui.bottom.right.popup,
+  .claim-validation-block .edit-row .ui.bottom.right.popup {
+    width: 650px !important; }
+  .claim-validation-block .coder-list-container {
+    max-width: 1200px;
+    margin: 30px auto 0; }
+  .claim-validation-block button.icon {
+    background: #f4f4f4;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    border-radius: 50%; }
+  .claim-validation-block button.icon.is-selected {
+    background: #43bf80; }
+  .claim-validation-block button.icon.is-selected [class^="icon-"],
+  .claim-validation-block button.icon.is-selected [class*=" icon-"] {
+    color: #fff; }
+  .claim-validation-block button.icon:last-child {
+    margin-right: 0; }
+  .claim-validation-block button.icon .fa {
+    color: #0cc2aa;
+    font-size: 14px; }
+  .claim-validation-block button.icon [class^="icon-"],
+  .claim-validation-block button.icon [class*=" icon-"] {
+    margin-right: 0;
+    color: #0cc2aa; }
+  .claim-validation-block .main-container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: flex; }
+  .claim-validation-block .view .btn {
+    font-size: 12px;
+    padding: 7px 10px; }
+  .claim-validation-block .list-btn a {
+    font-size: 14px; }
+  .claim-validation-block .ui.styled.accordion {
+    width: 100%;
+    border-radius: 0;
+    border: none; }
+  .claim-validation-block .card-container .title h2 {
+    font-size: 14px;
+    display: inline-block;
+    margin: 0; }
+  .claim-validation-block .card-container .ui.styled.accordion .active.title {
+    background: #e3fffb; }
+  .claim-validation-block .card-container .ui.styled.accordion .content {
+    padding: 0; }
+  .claim-validation-block .cpt-header h2 {
+    font-size: 16px;
+    padding: 5px 7px 5px 25px;
+    border-bottom: 1px solid #e4e4e4;
+    border-top: 1px solid #e4e4e4;
+    background: #eaeaea; }
+  .claim-validation-block .add-section .ui.toggle.checkbox {
+    float: left;
+    margin-top: 4px; }
+  .claim-validation-block .claim-wrap .table > tbody > tr > td:nth-child(3) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .claim-validation-block .claim-wrap .ui.toggle.checkbox label:after,
+  .claim-validation-block .add-section .ui.toggle.checkbox label:after,
+  .claim-validation-block .cpt-wrap .ui.toggle.checkbox label:after {
+    width: 20px;
+    height: 20px; }
+  .claim-validation-block .claim-wrap .ui.toggle.checkbox input,
+  .claim-validation-block .add-section .ui.toggle.checkbox input,
+  .claim-validation-block .cpt-wrap .ui.toggle.checkbox input {
+    width: 40px;
+    height: 20px; }
+  .claim-validation-block .claim-wrap .ui.toggle.checkbox label,
+  .claim-validation-block .add-section .ui.toggle.checkbox label,
+  .claim-validation-block .cpt-wrap .ui.toggle.checkbox label {
+    padding-left: 50px; }
+  .claim-validation-block .claim-wrap .ui.toggle.checkbox label:before,
+  .claim-validation-block .add-section .ui.toggle.checkbox label:before,
+  .claim-validation-block .cpt-wrap .ui.toggle.checkbox label:before {
+    background: #e74c3c !important;
+    width: 40px;
+    height: 20px; }
+  .claim-validation-block .claim-wrap .ui.toggle.checkbox input:checked ~ label:before,
+  .claim-validation-block .add-section .ui.toggle.checkbox input:checked ~ label:before,
+  .claim-validation-block .cpt-wrap .ui.toggle.checkbox input:checked ~ label:before {
+    background-color: #2ecc71 !important; }
+  .claim-validation-block .claim-wrap .ui.toggle.checkbox input:checked ~ label:after,
+  .claim-validation-block .add-section .ui.toggle.checkbox input:checked ~ label:after,
+  .claim-validation-block .cpt-wrap .ui.toggle.checkbox input:checked ~ label:after {
+    left: 25px; }
+  .claim-validation-block .fullscreen .chart-image {
+    display: none; }
+  .claim-validation-block .fullscreen .coding {
+    width: 100%;
+    float: none; }
+  .claim-validation-block .fullscreen .profile-member-block {
+    margin: 20px; }
+  .claim-validation-block .profile-member-block .card .member-title {
+    font-size: 18px;
+    line-height: 26px; }
+  .claim-validation-block .profile-member-block .provider-title {
+    margin-right: 0;
+    font-size: 12px; }
+  .claim-validation-block .profile-member-block .card > div:nth-child(1) > * {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 15px; }
+  .claim-validation-block .fullscreen .list-section {
+    position: absolute;
+    bottom: 15px;
+    right: 0; }
+  .claim-validation-block .fullscreen .table-chart-container .table-card-wrapper .ui.card.claim {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    box-shadow: none; }
+  .claim-validation-block .fullscreen .table-chart-container .table-card-wrapper .ui.card.claim > .content {
+    box-shadow: 0px 1px 1px 1px #b1b1b1 !important;
+    border-radius: 0 !important; }
+  .claim-validation-block .fullscreen .table-chart-container .table-card-wrapper .ui.accordion.claim .title:not(.ui) {
+    padding: 0; }
+  .claim-validation-block .fullscreen .ui.accordion.claim .add-row,
+  .claim-validation-block .card-header .add-row {
+    position: absolute;
+    top: 4px;
+    right: -15px;
+    padding: 0;
+    border: none; }
+  .claim-validation-block .fullscreen .ui.accordion.claim .add-row .btn {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    background: #5e5e5e; }
+  .claim-validation-block .fullscreen .ui.accordion.claim .add-row .btn [class^="icon-"],
+  .claim-validation-block .fullscreen .ui.accordion.claim .add-row .btn [class*=" icon-"] {
+    margin-right: 0; }
+  .claim-validation-block .card-header .add-row {
+    right: 10px;
+    top: 6px; }
+  .claim-validation-block .card-header .add-row > div {
+    float: left; }
+  .claim-validation-block .card-header .add-row .comment {
+    margin-right: 5px;
+    display: none; }
+  .claim-validation-block .card-header .add-row .btn {
+    background: #5e5e5e;
+    padding: 0;
+    color: #fff;
+    font-weight: normal;
+    margin-right: 0;
+    padding: 6px 10px; }
+  .claim-validation-block .card-header .add-row .btn [class^="icon-"],
+  .claim-validation-block .card-header .add-row .btn [class*=" icon-"] {
+    margin-right: 0;
+    font-size: 10px; }
+  .claim-validation-block .ui.form .form-error input[type=text] {
+    border-color: red; }
+  .claim-validation-block .ui.form .form-error .error {
+    font-size: 12px;
+    color: red; }
+  .claim-validation-block .fullscreen .table-card-wrapper .completion-section {
+    padding: 10px 30px; }
+  .claim-validation-block .fullscreen .table-responsive {
+    max-height: 500px; }
+  .claim-validation-block .add-section {
+    position: absolute;
+    top: 7px;
+    right: -10px; }
+  .claim-validation-block .add-section .edit-row {
+    float: left;
+    display: inline-block; }
+  .claim-validation-block .add-section .edit-row .ui.button.is-active {
+    position: relative; }
+  .claim-validation-block .add-section .edit-row .ui.button.is-active:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ff5b5b;
+    top: -1px;
+    right: 0px; }
+  .claim-validation-block .add-section .edit-row .ui.button:hover,
+  .claim-validation-block .add-section .edit-row .ui.button:focus {
+    background-color: #5e5e5e;
+    color: #fff; }
+  .claim-validation-block .add-section .btn {
+    background: #5e5e5e;
+    border-radius: 30px;
+    padding: 0 9px;
+    font-size: 14px;
+    margin-right: -5px;
+    color: #fff;
+    font-weight: normal;
+    width: 30px;
+    height: 30px;
+    margin-top: -3px; }
+  .claim-validation-block .add-section .indicator-wrap {
+    float: left; }
+  .claim-validation-block .add-section .indicator-wrap > label {
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 9px; }
+  .claim-validation-block .add-section .indicator-wrap .ui.toggle.checkbox {
+    float: right;
+    margin-top: 4px; }
+  .claim-validation-block .add-section .ui.button:hover
+.add-section .ui.button:focus {
+    background-color: #5e5e5e;
+    color: #fff; }
+  .claim-validation-block .add-section .btn [class^="icon-"],
+  .claim-validation-block .add-section .btn [class*=" icon-"] {
+    margin-right: 7px;
+    font-size: 10px; }
+  .claim-validation-block .add-section .status-wrap {
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px; }
+  .claim-validation-block .status-wrap .ui.checkbox label {
+    font-size: 12px;
+    padding-right: 1.85714em;
+    padding-left: 0; }
+  .claim-validation-block .status-wrap .ui.checkbox label:before,
+  .claim-validation-block .status-wrap .ui.checkbox label:after {
+    right: 0;
+    left: auto; }
+  .claim-validation-block .status-wrap .ui.dropdown .menu {
+    border-radius: 0; }
+  .claim-validation-block .status-wrap .ui.dropdown .menu > .item {
+    font-size: 14px;
+    border-bottom: 1px solid #dedede; }
+  .claim-validation-block .claim-inner {
+    position: relative; }
+  .claim-validation-block .claim-wrapper {
+    display: none; }
+  .claim-validation-block .light-yellow {
+    background: #fff5d6 !important; }
+  .claim-validation-block .light-red {
+    background: #ffdede !important; }
+  .claim-validation-block .light-green {
+    background: #e2ffeb !important; }
+  .claim-validation-block .text-left .ui.labeled.icon.button {
+    padding: 5px 6px 5px !important;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #f4f4f4;
+    margin-right: 0; }
+  .claim-validation-block .text-left .ui.labeled.icon.button.is-selected {
+    background: #43bf80; }
+  .claim-validation-block .text-left .ui.labeled.icon.button.is-selected .fa-list {
+    color: #fff; }
+  .claim-validation-block .text-left .ui.labeled.icon.button .fa {
+    color: #0cc2aa;
+    font-size: 14px; }
+  .claim-validation-block .text-left .ui.labeled.icon.button .fa.fa-search {
+    position: absolute;
+    right: 10px;
+    top: 5px; }
+  .claim-validation-block .text-left .ui.floating.dropdown .menu {
+    left: -480px;
+    width: 505px;
+    margin-bottom: 20px; }
+  .claim-validation-block .text-left .ui.dropdown .menu > .input {
+    margin: 10px; }
+  .claim-validation-block .text-left .ui.dropdown .menu > .header {
+    margin: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding-left: 5px; }
+  .claim-validation-block .text-left .ui.dropdown .menu > .divider {
+    margin: 0; }
+  .claim-validation-block .text-left .ui.dropdown .scrolling.menu > .item.item.item {
+    font-size: 14px; }
+  .claim-validation-block .ui.dropdown .menu > .item {
+    font-size: 14px; }
+  .claim-validation-block .text-left .ui.dropdown > .visible.menu .scrolling.menu {
+    max-height: 150px;
+    overflow-x: auto; }
+  .claim-validation-block .comment .ui.form .fields .field:first-child {
+    width: 580px;
+    font-size: 14px; }
+  .claim-validation-block .add-claim-section {
+    padding: 8px 20px 8px 30px;
+    background: #f6f6f6; }
+  .claim-validation-block .add-claim-section .ui.search > .results .result {
+    font-size: 14px;
+    padding: 10px 15px; }
+  .claim-validation-block .add-claim-section .ui.search > .results .result .content {
+    padding: 0; }
+  .claim-validation-block .add-claim-section .ui.search > .results .result .title {
+    height: auto;
+    padding: 0;
+    border: none; }
+  .claim-validation-block .add-claim-section .ui.form .fields > .field:first-child {
+    width: 25%; }
+  .claim-validation-block .add-claim-section .ui.form .fields:last-child .field:nth-child(2) {
+    width: 60%; }
+  .claim-validation-block .add-claim-section .ui.form .fields:last-child .field:nth-child(3) {
+    width: 40%; }
+  .claim-validation-block .cpt-wrap .add-claim-section .ui.form .fields > .field:first-child {
+    width: 40%; }
+  .claim-validation-block .cpt-wrap .add-claim-section .ui.form .fields:last-child .field:nth-child(2) {
+    width: 50%; }
+  .claim-validation-block .cpt-wrap .add-claim-section .ui.form .fields:last-child .field:nth-child(4) {
+    width: 40%; }
+  .claim-validation-block .add-claim-section .ui.form input[type=text] {
+    font-size: 12px; }
+  .claim-validation-block .add-claim-section .ui.button {
+    padding: 7px 10px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 0; }
+  .claim-validation-block .not-review-wrap {
+    position: relative; }
+  .claim-validation-block .not-review {
+    padding: 10px 0;
+    display: none; }
+  .claim-validation-block .not-review-btn {
+    float: right;
+    clear: both;
+    margin-bottom: 5px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 5px 10px; }
+  .claim-validation-block .not-review .review-text,
+  .claim-validation-block .not-review .text-left {
+    display: inline-block; }
+  .claim-validation-block .not-review .review-text {
+    margin-right: 10px;
+    font-size: 14px; }
+  .claim-validation-block .inline-message-review {
+    display: none;
+    background: #d3d3d3;
+    padding: 10px; }
+  .claim-validation-block .inline-message-review.is-visible {
+    display: block;
+    clear: both;
+    width: 750px;
+    margin-left: 20px; }
+  .claim-validation-block .inline-message-review input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px; }
+  .claim-validation-block .editable-buttons {
+    display: none; }
+  .claim-validation-block .card-container .ui.styled.accordion .title {
+    height: 38px;
+    padding: 10px; }
+  .claim-validation-block .card-container .ui.accordion .title .dropdown.icon {
+    margin-top: 3px; }
+  .claim-validation-block .claim-title-inner {
+    position: absolute;
+    top: 10px;
+    left: 32px; }
+  .claim-validation-block .ui.form .review-select .ui.selection.dropdown {
+    padding: 2px 4px 0;
+    min-height: auto;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #2b2b2b;
+    line-height: 16px;
+    width: 100%; }
+  .claim-validation-block .review-select .ui.selection.dropdown > .dropdown.icon {
+    margin: 5px 0 0;
+    padding: 0; }
+  .claim-validation-block .review-select .ui.dropdown .menu > .item {
+    font-size: 12px; }
+  .claim-validation-block .review-select .ui.selection.dropdown .menu > .item {
+    padding: 5px !important; }
+  .claim-validation-block .review-select .ui.dropdown > .text {
+    width: 175px;
+    padding-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .claim-validation-block .editable-input {
+    margin-top: -3px; }
+  .claim-validation-block .editable-input input {
+    border: 1px solid #f8f8f8;
+    padding-left: 5px; }
+  .claim-validation-block .claim-title-inner h2 {
+    font-size: 14px;
+    margin: 0; }
+  .claim-validation-block .ui-datepicker .ui-datepicker-title {
+    color: #333; }
+  .claim-validation-block .cannot-review-section .standard-message {
+    background: #fff;
+    box-shadow: 0px 1px 1px 1px #b1b1b1;
+    padding: 15px 10px;
+    position: relative; }
+  .claim-validation-block .standard-message .ui.form .fields .field:last-child {
+    -webkit-box-flex: 1;
+    flex: 1; }
+  .claim-validation-block .standard-message .ui.form {
+    height: 36px; }
+  .claim-validation-block .standard-message .field strong {
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+    margin-top: -4px; }
+  .claim-validation-block .standard-message .ui.form .fields {
+    height: 100%; }
+  .claim-validation-block .standard-message .ui.form .fields input,
+  .claim-validation-block .standard-message .ui.form .fields button {
+    height: 100%;
+    font-size: 14px; }
+  .claim-validation-block .standard-message .ui.form .fields input {
+    width: 85%; }
+  .claim-validation-block .standard-message .save-icon {
+    background: url("../img/save.png") no-repeat;
+    border: none;
+    text-indent: -9999px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 10px;
+    background-size: 36px;
+    width: 36px; }
+  .claim-validation-block .standard-message .ui.form .fields .field small {
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px; }
+  .claim-validation-block .standard-message .ui.form .fields .field:first-child {
+    width: 70%; }
+  .claim-validation-block .hidden {
+    display: none !important; }
+  .claim-validation-block .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; }
+  .claim-validation-block .visuallyhidden.focusable:active,
+  .claim-validation-block .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
+  .claim-validation-block .invisible {
+    visibility: hidden; }
+  .claim-validation-block .clearfix:before,
+  .claim-validation-block .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */ }
+  .claim-validation-block .clearfix:after {
+    clear: both; }
+  .claim-validation-block .fullscreen .add-claim-section {
+    padding: 10px 20px 10px 30px; }
+  @media only screen and (min-width: 1600px) {
+    .claim-validation-block .main-container {
+      max-width: 1600px;
+      padding: 0 20px; }
+    .claim-validation-block .profile-member-block .card {
+      padding: 30px 20px; }
+    .claim-validation-block .profile-member-block .card .member-title {
+      font-size: 24px;
+      line-height: 32px; }
+    .claim-validation-block .dob {
+      font-size: 18px; }
+    .claim-validation-block .cannot-review-section {
+      margin: 20px 0; }
+    .claim-validation-block .profile-member-block [class^="icon-"], .claim-validation-block .profile-member-block [class*=" icon-"] {
+      font-size: 16px; }
+    .claim-validation-block .profile-member-block .provider-title {
+      font-size: 16px; }
+    .claim-validation-block .main-container.fullscreen .profile-member-block .card {
+      text-align: center; }
+    .claim-validation-block .cannot-review-section .standard-message {
+      padding: 25px 20px; }
+    .claim-validation-block .standard-message .ui.form {
+      height: 45px; }
+    .claim-validation-block .standard-message .field strong {
+      font-size: 16px; }
+    .claim-validation-block .standard-message .save-icon {
+      background-size: 44px;
+      width: 45px; }
+    .claim-validation-block .ui.form .review-select {
+      height: 30px; }
+    .claim-validation-block .ui.form .review-select .ui.selection.dropdown {
+      padding: 2px 10px 0;
+      font-size: 16px;
+      line-height: 24px;
+      height: 100%;
+      margin-top: 10px; }
+    .claim-validation-block .standard-message .ui.form .fields input {
+      font-size: 16px; }
+    .claim-validation-block .card .card-header {
+      padding: 20px; }
+    .claim-validation-block .card-header .add-row {
+      right: 15px;
+      top: 12px; }
+    .claim-validation-block .card .card-header h2 {
+      font-size: 24px; }
+    .claim-validation-block .card-header .add-row {
+      right: 15px;
+      top: 12px; }
+    .claim-validation-block .card-header .add-row .btn {
+      padding: 12px;
+      font-size: 16px; }
+    .claim-validation-block .card-container .ui.styled.accordion .title {
+      height: 50px;
+      padding: 20px; }
+    .claim-validation-block .claim-title-inner h2 {
+      font-size: 18px;
+      margin: 0 0 0 10px;
+      line-height: 30px; }
+    .claim-validation-block .card-container .ui.accordion .title .dropdown.icon {
+      margin-top: 0; }
+    .claim-validation-block .add-section {
+      top: 13px;
+      right: 20px; }
+    .claim-validation-block .add-section .status-wrap {
+      margin-right: 35px;
+      margin-top: 4px; }
+    .claim-validation-block .status-wrap .ui.checkbox label {
+      font-size: 16px; }
+    .claim-validation-block .table > thead > tr > th {
+      line-height: 24px;
+      font-size: 16px; }
+    .claim-validation-block .table > tbody > tr > td, .claim-validation-block .table > tbody > tr > th, .claim-validation-block .table > tfoot > tr > td, .claim-validation-block .table > tfoot > tr > th, .claim-validation-block .table > thead > tr > td, .claim-validation-block .table > thead > tr > th {
+      padding: 10px;
+      font-size: 16px;
+      line-height: 24px; }
+    .claim-validation-block .add-claim-section {
+      padding: 15px 30px; }
+    .claim-validation-block .add-claim-section .ui.form input[type=text] {
+      font-size: 14px;
+      height: 50px; }
+    .claim-validation-block .add-claim-section .ui.form .fields .field:first-child {
+      width: 24%; }
+    .claim-validation-block .add-claim-section .ui.form .fields:last-child .field:nth-child(2) {
+      width: 45%; }
+    .claim-validation-block .add-claim-section .ui.form .ui.form .fields:last-child .field {
+      width: 20%; }
+    .claim-validation-block .add-claim-section .ui.button {
+      padding: 13px 30px;
+      font-size: 16px;
+      line-height: 24px;
+      margin-right: 0; }
+    .claim-validation-block .cpt-header h2 {
+      font-size: 20px;
+      padding: 20px 30px; }
+    .claim-validation-block .completion-section .btn {
+      font-size: 18px;
+      padding: 15px 20px; }
+    .claim-validation-block .fullscreen .table-chart-container {
+      padding: 0 20px; }
+    .claim-validation-block .card-body input[type="text"] {
+      font-size: 14px;
+      height: 36px; }
+    .claim-validation-block .card-body .inline-message .ui.green.button {
+      padding: 5px 15px;
+      font-size: 16px;
+      line-height: 24px; } }
+
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+.banner-header {
+  height: 100vh;
+  background: #0cc2aa url("../img/parallax-bg.png") no-repeat 0px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-weight: normal;
+  position: relative; }
+  .banner-header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px; }
+  .banner-header .title p {
+    font-size: 20px;
+    color: #4a4a4a;
+    margin: 20px 0; }
+  .banner-header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px; }
+  .banner-header .heading {
+    font-size: 40px;
+    line-height: 48px;
+    color: #fff;
+    font-weight: normal;
+    margin: 0; }
+
+.menu-list {
+  padding: 0;
+  list-style: none;
+  margin: 0; }
+
+.menu-item {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle; }
+  .menu-item:last-child {
+    margin-right: 0; }
+
+.menu-link {
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  padding: 10px; }
+  .menu-link:before {
+    width: 2px;
+    height: 100%;
+    background: white;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .menu-link:after {
+    width: 2px;
+    height: 100%;
+    background: white;
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .menu-link span:before {
+    width: 100%;
+    height: 2px;
+    background: white;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  .menu-link span:after {
+    width: 100%;
+    height: 2px;
+    background: white;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); }
+  .menu-link.is-active {
+    color: rgba(255, 255, 255, 0.7); }
+    .menu-link.is-active:before, .menu-link.is-active:after {
+      -webkit-transform: translateX(0);
+      transform: translateX(0); }
+    .menu-link.is-active span:before, .menu-link.is-active span:after {
+      -webkit-transform: translateX(0);
+      transform: translateX(0); }
+  .menu-link:hover, .menu-link:focus {
+    color: rgba(255, 255, 255, 0.7); }
+    .menu-link:hover:before, .menu-link:hover:after, .menu-link:focus:before, .menu-link:focus:after {
+      -webkit-transform: translateX(0);
+      transform: translateX(0); }
+    .menu-link:hover span:before, .menu-link:hover span:after, .menu-link:focus span:before, .menu-link:focus span:after {
+      -webkit-transform: translateX(0);
+      transform: translateX(0); }
+
+.banner-navigation {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 25px 0; }
+
+.banner-info {
+  text-align: center;
+  margin-bottom: 50px; }
+
+.banner-inner-block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.banner-info__content p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 15px 0 0; }
+
+.login {
+  padding: 10px; }
+  .login span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 15px;
+    line-height: 40px; }
+  .login .btn {
+    color: #4c4c4c;
+    padding: 5px 15px;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+    box-shadow: none; }
+    .login .btn:hover, .login .btn:focus {
+      background: #F0EC57; }
+
+.banner-grid__content {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around; }
+  .banner-grid__content .card-list {
+    width: 33%;
+    text-align: center;
+    background: #fff;
+    margin: 3px;
+    padding: 30px 10px 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+    .banner-grid__content .card-list:hover, .banner-grid__content .card-list:focus {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px); }
+
+.img-icon i {
+  font-size: 100px;
+  color: #1cae9b; }
+
+.signup-block {
+  background: #8c8c8c;
+  margin: 0 -10px;
+  padding: 20px 0; }
+  .signup-block p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 26px;
+    margin-bottom: 20px; }
+  .signup-block .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    border-color: #ECEFF1;
+    z-index: 1;
+    background: #fff947;
+    color: #4a4a4a;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    position: relative;
+    margin-right: 5px;
+    box-shadow: none !important;
+    min-width: 125px; }
+    .signup-block .btn:last-child {
+      margin-right: 0; }
+    .signup-block .btn:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #e2de52;
+      z-index: -1;
+      border-radius: inherit;
+      opacity: 0;
+      -webkit-transform: scale3d(0.6, 0.6, 1);
+      transform: scale3d(0.6, 0.6, 1);
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+      transition: opacity 0.3s, -webkit-transform 0.3s;
+      transition: transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+      -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+      transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
+    .signup-block .btn:hover {
+      background: #fff;
+      color: #3f51b5; }
+      .signup-block .btn:hover:before {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        opacity: 1; }
+
+/*# sourceMappingURL=app.css.map */

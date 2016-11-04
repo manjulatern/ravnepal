@@ -98,6 +98,7 @@ body {
     line-height: 10px;
     color: #5E5E5E;
     background-color: #f4f4f4;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 *, a, button, i, input {
@@ -258,10 +259,10 @@ button, input, select, textarea {
 
 .main-header {
     width: 100%;
-    height: 100px;
+    height: 60px;
     color: white;
     background: #0cc2aa;
-    line-height: 100px;
+    line-height: 60px;
     backface-visibility: hidden;
 }
 
@@ -270,11 +271,10 @@ button, input, select, textarea {
     transform: translate3d(0, -6rem, 0);
 }
 
-.main-header h1 {
-    float: left;
+.logo-wrap a {
     font-size: 18px;
-    margin-top: 40px;
-    text-transform: uppercase;
+    line-height: 60px;
+    color: #fff;
 }
 
 .main-header .main-container {
@@ -293,7 +293,7 @@ button, input, select, textarea {
 
 .main-header nav .ui.inline.dropdown .menu {
     right: 0;
-    top: 70px;
+    top: 50px;
 }
 
 .main-header nav ul {
