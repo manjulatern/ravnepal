@@ -199,9 +199,12 @@
   }
   .btn {
     color: #4c4c4c;
-    padding: 5px 15px;
+    margin-top: -4px;
+    padding: 10px 20px;
     font-size: 14px;
-    background: #fff;
+    color: #fff;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.31);
     border-radius: 4px;
     text-decoration: none;
     outline: none;
