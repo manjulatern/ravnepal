@@ -435,6 +435,11 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0; }
+
 audio,
 canvas,
 iframe,
@@ -1941,5 +1946,133 @@ button, input, select, textarea {
   .signup-block .ui.form .field > .selection.dropdown {
     font-size: 14px;
     background: #f9f9f9; }
+
+.dashboard-wrapper {
+  display: -webkit-box;
+  display: flex;
+  min-height: 100%;
+  background: #2a2a2a;
+  /* Demo Navigation */
+  /* Demo Description */ }
+  .dashboard-wrapper .sidebar {
+    position: absolute;
+    width: 220px; }
+  .dashboard-wrapper .toggle-btn {
+    cursor: pointer;
+    color: #fff; }
+    .dashboard-wrapper .toggle-btn:before {
+      content: '\f0c9';
+      font: 30px fontawesome; }
+  .dashboard-wrapper .top-bar {
+    background: #0cc2aa;
+    padding: 15px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row; }
+  .dashboard-wrapper .bottom-block {
+    padding: 20px 15px; }
+  .dashboard-wrapper .ui.dividing.header {
+    font-size: 18px;
+    padding-bottom: 10px; }
+  .dashboard-wrapper .ui.form textarea {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    font-size: 14px; }
+  .dashboard-wrapper .ui.form .inline.field > label {
+    width: 160px;
+    font-size: 14px; }
+  .dashboard-wrapper .ui.form .inline.field > input {
+    width: 50%;
+    padding: 10px;
+    font-size: 14px; }
+  .dashboard-wrapper .ui.form .inline.field > .selection.dropdown {
+    width: 50%;
+    padding: 10px;
+    font-size: 14px; }
+  .dashboard-wrapper .ui.breadcrumb {
+    display: block;
+    display: block;
+    background: #e8e6e6;
+    padding: 10px 15px; }
+    .dashboard-wrapper .ui.breadcrumb .section {
+      font-size: 14px; }
+  .dashboard-wrapper .form-wrapper {
+    padding: 30px;
+    max-width: 700px;
+    margin: 30px auto;
+    background: #fff;
+    display: block;
+    box-shadow: 0 0 1px 1px #cccccc; }
+  .dashboard-wrapper .btn-action-wrap {
+    margin-top: 40px; }
+  .dashboard-wrapper .post .btn {
+    background: #FFE21F;
+    margin-left: 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #2a2a2a; }
+  .dashboard-wrapper .main-content {
+    -webkit-box-flex: 1;
+    flex: 1;
+    background: #eee;
+    box-shadow: 0 0 5px black;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s; }
+    .dashboard-wrapper .main-content.isOpen {
+      -webkit-transform: translate3d(220px, 0, 0);
+      transform: translate3d(220px, 0, 0); }
+  .dashboard-wrapper .title {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #eee;
+    border-bottom: 1px solid #222;
+    background: #2a2a2a; }
+  .dashboard-wrapper .nav li a {
+    position: relative;
+    display: block;
+    padding: 15px 15px 15px 50px;
+    font-size: 12px;
+    color: #eee;
+    border-bottom: 1px solid #222; }
+  .dashboard-wrapper .nav li a:before {
+    font: 14px fontawesome;
+    position: absolute;
+    top: 14px;
+    left: 20px; }
+  .dashboard-wrapper .nav li:nth-child(1) a:before {
+    content: '\f00a'; }
+  .dashboard-wrapper .nav li:nth-child(2) a:before {
+    content: '\f15c'; }
+  .dashboard-wrapper .nav li:nth-child(3) a:before {
+    content: '\f121'; }
+  .dashboard-wrapper .nav li:nth-child(4) a:before {
+    content: '\f0c0'; }
+  .dashboard-wrapper .nav li:nth-child(5) a:before {
+    content: '\f023';
+    left: 23px; }
+  .dashboard-wrapper .nav li a:hover {
+    background: #444; }
+  .dashboard-wrapper .nav li a.active {
+    box-shadow: inset 5px 0 0 #5b5, inset 6px 0 0 #222;
+    background: #444; }
+  .dashboard-wrapper h1 {
+    margin: 25px 0 15px;
+    font-size: 28px;
+    font-weight: 400; }
+  .dashboard-wrapper h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #999; }
 
 /*# sourceMappingURL=app.css.map */

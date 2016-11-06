@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CoderDesign</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/css/jqueryui-editable.css"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="./public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/css/semantic.min.css">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/app.css">
+    <script src="./public/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<main class='dashboard-wrapper'>
+    <section class='sidebar'>
+        <div class='title'>
+            CoderConnect
+        </div>
+        <ul class='nav'>
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="#">My Projects</a>
+            </li>
+            <li>
+                <a href="#">My Coders</a>
+            </li>
+            <li>
+                <a class='active' href="#">My Users</a>
+            </li>
+            <li>
+                <a href="#">Logout</a>
+            </li>
+        </ul>
+    </section>
+    <section class='main-content isOpen'>
+        <div class="top-bar">
+            <div class="toggle-btn-block">
+                <a href="#" class='toggle-btn'></a>
+            </div>
+            <div class="profile-block">
+                <div class="post">
+                    <a href="#" class="btn">Post a project</a>
+                </div>
+                <div class="profile-content">
+
+                </div>
+            </div>
+        </div>
+        <div class="ui breadcrumb">
+            <a class="section">Home</a>
+            <span class="divider">/</span>
+            <a class="section">My coders</a>
+            <span class="divider">/</span>
+            <div class="active section">Post a Project</div>
+        </div>
+        <div class="form-wrapper">
+            <form class="ui form">
+                <h4 class="ui dividing header">Project Information</h4>
+                <div class="inline field">
+                    <label>Name of your project</label>
+                    <input type="text" name="" placeholder="Project Name">
+                </div>
+                <div class="inline field">
+                    <label>Choose a Project type:</label>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="gender">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Project type</div>
+                        <div class="menu">
+                            <div class="item" data-value="4">
+                                Code abstraction
+                            </div>
+                            <div class="item" data-value="3">
+                                HCC validation
+                            </div>
+                            <div class="item" data-value="2">
+                                Claim validation
+                            </div>
+                            <div class="item" data-value="1">
+                                RADV
+                            </div>
+                            <div class="item" data-value="0">
+                                Other
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline field">
+                    <label>Describe your project</label>
+                    <textarea></textarea>
+                </div>
+                <div class="inline field">
+                    <label># of charts (required)</label>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="gender">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Picklist</div>
+                        <div class="menu">
+                            <div class="item" data-value="4">
+                                100
+                            </div>
+                            <div class="item" data-value="3">
+                                400
+                            </div>
+                            <div class="item" data-value="2">
+                                500
+                            </div>
+                            <div class="item" data-value="1">
+                                800
+                            </div>
+                            <div class="item" data-value="0">
+                                1000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline field">
+                    <label># of Claims (Optional)</label>
+                    <input type="text" name="" placeholder="Project Name">
+                </div>
+                <div class="inline field">
+                    <label>Line of Business</label>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="gender">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Please select</div>
+                        <div class="menu">
+                            <div class="item" data-value="2">
+                                Medicare Advantage
+                            </div>
+                            <div class="item" data-value="1">
+                                Commercial Risk Adjustment
+                            </div>
+                            <div class="item" data-value="0">
+                                Medicaid
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-action-wrap">
+                    <button class="ui green button">Post Project</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+
+<script src="./public/js/vendor/jquery-1.12.0.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/js/jqueryui-editable.min.js"></script>
+<script src="./public/js/vendor/sticky-kit.js"></script>
+<script src="./public/js/vendor/semantic.min.js"></script>
+<script src="./public/js/main.js"></script>
+<script src="./public/js/vendor/pdfobject.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.main-content .toggle-btn').on('click', function() {
+            $('.main-content').toggleClass('isOpen');
+        });
+    });
+</script>
+</body>
+
+</html>
