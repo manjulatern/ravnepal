@@ -1747,8 +1747,13 @@ button, input, select, textarea {
         opacity: 1; }
 
 .signup-block.ui.modal {
-  width: 600px !important;
-  padding: 0; }
+  max-width: 600px !important;
+  padding: 0;
+  background-color: white;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%; }
   .signup-block.ui.modal > .header {
     padding: 10px; }
   .signup-block.ui.modal > .content {

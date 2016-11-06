@@ -303,8 +303,13 @@
 
 .signup-block {
   &.ui.modal {
-    width: 600px !important;
+    max-width: 600px !important;
     padding: 0;
+    background-color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
     > {
       .header {
         padding: 10px;
