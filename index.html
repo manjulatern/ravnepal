@@ -63,7 +63,7 @@
                             <i class="material-icons">&#xE87C;</i>
                         </div>
                         <div class="title">
-                            <p>I am a Health or Provider</p>
+                            <p>I am a Health Plan or Provider</p>
                         </div>
                         <div class="signup-block">
                             <p>Looking for</p>
@@ -101,6 +101,71 @@
         </div>
     </div>
 </section>
+
+<div class="signup-block ui modal">
+    <div class="header">
+        <h1 class="">Signup</h1>
+    </div>
+    <div class="content">
+        <div class="form-description">
+            <form>
+                <div class="row">
+                    <h4>Account</h4>
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="Full Name"/>
+                        <div class="input-icon"><i class="fa fa-user"></i></div>
+                    </div>
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="Company Name"/>
+                        <div class="input-icon"><i class="fa fa-building"></i></div>
+                    </div>
+                    <div class="ui form">
+                        <div class="field">
+                            <div class="ui selection dropdown">
+                                <input type="hidden" name="gender">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Company Type</div>
+                                <div class="menu">
+                                    <div class="item" data-value="3">Health Plan</div>
+                                    <div class="item" data-value="2">Medical Group</div>
+                                    <div class="item" data-value="1">IPA</div>
+                                    <div class="item" data-value="0">Individual Provider Practices</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group input-group-icon">
+                        <input type="email" placeholder="Email Address"/>
+                        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+                    </div>
+                    <div class="input-group input-group-icon">
+                        <input type="password" placeholder="Password"/>
+                        <div class="input-icon"><i class="fa fa-key"></i></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4>Terms and Conditions</h4>
+                    <div class="input-group">
+                        <input type="checkbox" id="terms-1"/>
+                        <label for="terms-1">Yes, periodically send me emails to help me get the most out of Coder Connect</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" id="terms-2"/>
+                        <label for="terms-2">Yes, I understand and agree to the Coder Connect Terms of Service, including the User Agreement and Privacy Policy</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui black deny button">
+            Close
+        </div>
+        <button class="positive ui button">Sign Up</button>
+    </div>
+</div>
+
+
 
 
 
@@ -142,6 +207,9 @@
         $(".modifiers").select2({
             data: modifiers
         });
+        $('.ui.modal')
+            .modal('attach events','.signup-block .btn','show')
+        ;
     });
 
     $(function () {
