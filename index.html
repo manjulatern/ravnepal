@@ -61,7 +61,7 @@
             </div>
             <div class="banner-grid">
                 <div class="banner-grid__content">
-                    <div class="card-list">
+                    <div class="card-list health-plan">
                         <div class="img-icon">
                             <i class="material-icons">&#xE87C;</i>
                         </div>
@@ -70,7 +70,7 @@
                         </div>
                         <div class="signup-block">
                             <p>Looking for</p>
-                            <button class="btn btn-primary">Hire Coders</button>
+                            <button class="btn btn-primary is-active">Hire Coders</button>
                             <button class="btn btn-primary">Hire Coding Vendor</button>
                         </div>
                     </div>
@@ -121,6 +121,10 @@
                     <div class="input-group input-group-icon">
                         <input type="text" placeholder="Company Name"/>
                         <div class="input-icon"><i class="fa fa-building"></i></div>
+                    </div>
+                    <div class="input-group input-group-icon">
+                        <input type="text" placeholder="Title"/>
+                        <div class="input-icon"><i class="fa fa-file"></i></div>
                     </div>
                     <div class="ui form">
                         <div class="field">
@@ -211,7 +215,7 @@
             data: modifiers
         });
         $('.ui.modal')
-            .modal('attach events','.signup-block .btn','show')
+            .modal('attach events','.health-plan .signup-block .is-active','show')
         ;
     });
 

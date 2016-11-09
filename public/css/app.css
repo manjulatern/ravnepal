@@ -1951,9 +1951,7 @@ button, input, select, textarea {
   display: -webkit-box;
   display: flex;
   min-height: 100%;
-  background: #2a2a2a;
-  /* Demo Navigation */
-  /* Demo Description */ }
+  background: #2a2a2a; }
   .dashboard-wrapper .sidebar {
     position: absolute;
     width: 220px; }
@@ -1981,6 +1979,41 @@ button, input, select, textarea {
     width: 50%;
     padding: 10px;
     font-size: 14px; }
+  .dashboard-wrapper .ui.form .inline.field .ui.form.help-text {
+    min-width: 200px; }
+    .dashboard-wrapper .ui.form .inline.field .ui.form.help-text > .inline.field {
+      position: relative; }
+      .dashboard-wrapper .ui.form .inline.field .ui.form.help-text > .inline.field:not(:first-child) {
+        margin-top: 25px; }
+    .dashboard-wrapper .ui.form .inline.field .ui.form.help-text .ui.button {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      padding: 6px;
+      position: absolute;
+      right: -15px;
+      margin: 0;
+      top: -5px; }
+  .dashboard-wrapper .ui.form .inline.field.input-parameters {
+    overflow: hidden; }
+    .dashboard-wrapper .ui.form .inline.field.input-parameters > label {
+      vertical-align: top;
+      line-height: 20px; }
+    .dashboard-wrapper .ui.form .inline.field.input-parameters .input-wrap {
+      display: inline-block;
+      width: 50%; }
+      .dashboard-wrapper .ui.form .inline.field.input-parameters .input-wrap > input {
+        font-size: 14px; }
+        .dashboard-wrapper .ui.form .inline.field.input-parameters .input-wrap > input:not(:first-child) {
+          margin-top: 10px; }
+  .dashboard-wrapper .ui.form .inline.field.inline-checkbox {
+    margin-top: 20px; }
+    .dashboard-wrapper .ui.form .inline.field.inline-checkbox > label {
+      vertical-align: top; }
+    .dashboard-wrapper .ui.form .inline.field.inline-checkbox .ui.form {
+      display: inline-block; }
+      .dashboard-wrapper .ui.form .inline.field.inline-checkbox .ui.form label {
+        font-size: 14px; }
   .dashboard-wrapper .ui.form .inline.field > label {
     width: 160px;
     font-size: 14px; }
@@ -2008,12 +2041,6 @@ button, input, select, textarea {
     box-shadow: 0 0 1px 1px #cccccc; }
   .dashboard-wrapper .btn-action-wrap {
     margin-top: 40px; }
-  .dashboard-wrapper .post .btn {
-    background: #FFE21F;
-    margin-left: 20px;
-    border-radius: 4px;
-    font-size: 14px;
-    color: #2a2a2a; }
   .dashboard-wrapper .main-content {
     -webkit-box-flex: 1;
     flex: 1;
@@ -2070,9 +2097,31 @@ button, input, select, textarea {
     margin: 25px 0 15px;
     font-size: 28px;
     font-weight: 400; }
-  .dashboard-wrapper h2 {
-    font-size: 18px;
-    font-weight: 400;
-    color: #999; }
+  .dashboard-wrapper .welcome-text {
+    margin-bottom: 30px; }
+    .dashboard-wrapper .welcome-text h2 {
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 400;
+      color: #5d5d5d; }
+    .dashboard-wrapper .welcome-text p {
+      font-size: 16px;
+      color: #a5a5a5; }
+  .dashboard-wrapper .connect-block .btn-group {
+    overflow: hidden; }
+  .dashboard-wrapper .connect-block .btn-grid {
+    width: 200px;
+    float: left;
+    text-align: center; }
+    .dashboard-wrapper .connect-block .btn-grid:not(:first-child) {
+      margin-left: 30px; }
+    .dashboard-wrapper .connect-block .btn-grid a {
+      display: block;
+      width: 100%; }
+    .dashboard-wrapper .connect-block .btn-grid span {
+      display: block;
+      margin-top: 10px;
+      font-size: 12px;
+      line-height: 16px; }
 
 /*# sourceMappingURL=app.css.map */

@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="./public/css/semantic.min.css">
     <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/app.css">
-    <script src="./public/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -33,7 +32,7 @@
         </div>
         <ul class='nav'>
             <li>
-                <a href="#">Dashboard</a>
+                <a class='active' href="#">Dashboard</a>
             </li>
             <li>
                 <a href="#">My Projects</a>
@@ -42,7 +41,7 @@
                 <a href="#">My Coders</a>
             </li>
             <li>
-                <a class='active' href="#">My Users</a>
+                <a href="#">My Users</a>
             </li>
             <li>
                 <a href="#">Logout</a>
@@ -55,21 +54,18 @@
                 <a href="#" class='toggle-btn'></a>
             </div>
             <div class="profile-block">
-                <div class="post">
-                    <a href="#" class="btn">Post a project</a>
-                </div>
                 <div class="profile-content">
 
                 </div>
             </div>
         </div>
-        <div class="ui breadcrumb">
-            <a class="section">Home</a>
-            <span class="divider">/</span>
-            <a class="section">My coders</a>
-            <span class="divider">/</span>
-            <div class="active section">Post a Project</div>
-        </div>
+        <!--<div class="ui breadcrumb">-->
+            <!--<a class="section">Home</a>-->
+            <!--<span class="divider">/</span>-->
+            <!--<a class="section">My coders</a>-->
+            <!--<span class="divider">/</span>-->
+            <!--<div class="active section">Post a Project</div>-->
+        <!--</div>-->
         <div class="form-wrapper">
             <form class="ui form">
                 <h4 class="ui dividing header">Project Information</h4>
@@ -104,7 +100,15 @@
                 </div>
                 <div class="inline field">
                     <label>Describe your project</label>
-                    <textarea></textarea>
+                    <textarea rows="2"></textarea>
+                </div>
+                <div class="inline field input-parameters">
+                    <label>Input project parameters</label>
+                    <div class="input-wrap">
+                        <input type="text" name="" placeholder="Project Coding Start Date">
+                        <input type="text" name="" placeholder="Project Coding End Date">
+                        <input type="text" name="" placeholder="Years targeted">
+                    </div>
                 </div>
                 <div class="inline field">
                     <label># of charts (required)</label>
@@ -132,7 +136,7 @@
                     </div>
                 </div>
                 <div class="inline field">
-                    <label># of Claims (Optional)</label>
+                    <label># of Claims (optional)</label>
                     <input type="text" name="" placeholder="Project Name">
                 </div>
                 <div class="inline field">
@@ -150,6 +154,39 @@
                             </div>
                             <div class="item" data-value="0">
                                 Medicaid
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline field inline-checkbox">
+                    <label>Claim Validation Type(s)</label>
+                    <div class="ui form help-text">
+                        <div class="inline field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" tabindex="0" class="hidden">
+                                <label>Medical Model</label>
+                                <span></span>
+                            </div>
+                            <div class="ui button" data-tooltip="Add users to your feed" data-position="right center">
+                                <i class="fa fa-question"></i>
+                            </div>
+                        </div>
+                        <div class="inline field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" tabindex="0" class="hidden">
+                                <label>Pharmacy Model</label>
+                            </div>
+                            <div class="ui button" data-tooltip="Add users to your feed" data-position="right center">
+                                <i class="fa fa-question"></i>
+                            </div>
+                        </div>
+                        <div class="inline field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" tabindex="0" class="hidden">
+                                <label>All Diagnosis Codes</label>
+                            </div>
+                            <div class="ui button" data-tooltip="Add users to your feed" data-position="right center">
+                                <i class="fa fa-question"></i>
                             </div>
                         </div>
                     </div>
