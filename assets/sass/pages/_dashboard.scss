@@ -4,7 +4,6 @@
   background: #2a2a2a;
 
   .sidebar {
-    position: absolute;
     width: 220px;
   }
 
@@ -19,13 +18,28 @@
 
   .top-bar {
     background: #0cc2aa;
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
+    padding: 23px 15px;
+    .profile-block {
+      float: right;
+    }
+    .ui.dropdown {
+      color: #fff;
+      font-size: 16px;
+      .menu {
+        left: -10px;
+        top: 30px;
+        > .item {
+          padding: 10px 15px !important;
+          font-size: 14px;
+        }
+      }
+    }
   }
 
   .bottom-block {
-    padding: 20px 15px;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 50px 10px;
   }
 
   .ui.dividing.header {
@@ -41,15 +55,15 @@
       font-size: 14px;
     }
     .inline.field {
-      .ui.form.help-text{
+      .ui.form.help-text {
         min-width: 200px;
-        >.inline.field{
+        > .inline.field {
           position: relative;
-          &:not(:first-child){
+          &:not(:first-child) {
             margin-top: 25px;
           }
         }
-        .ui.button{
+        .ui.button {
           border-radius: 50%;
           width: 30px;
           height: 30px;
@@ -60,7 +74,7 @@
           top: -5px;
         }
       }
-      &.input-parameters{
+      &.input-parameters {
         > label {
           vertical-align: top;
           line-height: 20px;
@@ -71,7 +85,7 @@
           width: 50%;
           > input {
             font-size: 14px;
-            &:not(:first-child){
+            &:not(:first-child) {
               margin-top: 10px;
             }
           }
@@ -130,14 +144,11 @@
   }
 
   .main-content {
-    flex: 1;
+    width: calc(100% - 220px);
     background: #eee;
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     transform: translate3d(0, 0, 0);
     transition: transform .3s;
-    &.isOpen {
-      transform: translate3d(220px, 0, 0);
-    }
   }
 
   .title {
@@ -202,39 +213,59 @@
 
   .welcome-text {
     margin-bottom: 30px;
+    text-align: center;
     h2 {
       font-size: 32px;
       line-height: 40px;
       font-weight: 400;
       color: #5d5d5d;
+      margin-bottom: 5px;
     }
     p {
-      font-size: 16px;
+      font-size: 14px;
       color: #a5a5a5;
     }
   }
-
-  .connect-block {
-    .btn-group {
-      overflow: hidden;
+  .dashboard-action-btn {
+    .banner-grid__content {
+      .card-list {
+        min-height: 240px;
+        padding: 30px 10px;
+        box-shadow: 0 1px 2px 1px rgba(67, 67, 67, 0.4);
+      }
     }
-    .btn-grid {
-      width: 200px;
-      float: left;
-      text-align: center;
-      &:not(:first-child){
-        margin-left: 30px;
-      }
-      a {
-        display: block;
-        width: 100%;
-      }
-      span {
-        display: block;
-        margin-top: 10px;
-        font-size: 12px;
-        line-height: 16px;
-      }
+  }
+}
+.action-title {
+  margin-bottom: 15px;
+  p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    min-height: 57px;
+  }
+}
+
+.manage-project {
+  margin-top: 50px;
+  h2 {
+    font-size: 20px;
+  }
+}
+
+.table-wrap {
+  .ui.sortable.table thead th{
+    &:after {
+      font: normal normal normal 14px/1 FontAwesome;
+      position: relative;
+    }
+    &.ascending:after {
+      content: '\f0dd';
+      top: -2px;
+    }
+    &.descending:after {
+      content: '\f0de';
+      top: 4px;
+
     }
   }
 }

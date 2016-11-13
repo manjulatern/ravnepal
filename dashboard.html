@@ -50,13 +50,19 @@
         </ul>
     </section>
     <section class='main-content isOpen'>
-        <div class="top-bar">
-            <div class="toggle-btn-block">
-                <a href="#" class='toggle-btn'></a>
-            </div>
+        <div class="top-bar clearfix">
             <div class="profile-block">
                 <div class="profile-content">
-
+                    <div class="menu">
+                        <div class="ui dropdown item">
+                            Abcname <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a class="item">Information</a>
+                                <a class="item">Profile</a>
+                                <a class="item">Logout</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -65,22 +71,86 @@
                 <h2>Welcome!</h2>
                 <p>What would you like to do?</p>
             </div>
-            <div class="connect-block">
-                <div class="btn-group">
-                    <div class="btn-grid">
-                        <a href="post-a-project.html" class="ui positive button">Post a project</a>
-                        <span>It's free to post a project.</span>
+            <div class="dashboard-action-btn">
+                <div class="banner-grid">
+                    <div class="banner-grid__content">
+                        <div class="card-list health-plan">
+                            <div class="img-icon">
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            <div class="action-title">
+                                <p>It's free to post a project.</p>
+                            </div>
+                            <div class="action-btn">
+                                <a href="post-a-project.html" class="ui positive button">Post a project</a>
+                            </div>
+                        </div>
+                        <div class="card-list">
+                            <div class="img-icon">
+                                <i class="fa fa-group" aria-hidden="true"></i>
+                            </div>
+                            <div class="action-title">
+                                <p>You can add users after configuring a project.</p>
+                            </div>
+                            <div class="action-btn">
+                                <button type="button" class="ui positive button">Add/Manage Users</button>
+                            </div>
+                        </div>
+                        <div class="card-list">
+                            <div class="img-icon">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <div class="action-title">
+                                <p>Search from thousands of coders according to desired skills and experience.</p>
+                            </div>
+                            <div class="action-btn">
+                                <button type="button" class="ui positive button">Search Coders</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="btn-grid">
-                        <button type="button" class="ui positive button">Add/Manage Users</button>
-                        <span>You can add users after configuring a project.</span>
-</span>
-                    </div>
-                    <div class="btn-grid">
-                        <button type="button" class="ui positive button">Search Coders</button>
-                        <span>Search from thousands of coders according to desired skills and experience.
-</span>
-                    </div>
+                </div>
+            </div>
+            <div class="manage-project">
+                <h2>Project lists </h2>
+                <div class="table-wrap">
+                    <table class="ui sortable celled table">
+                        <thead>
+                        <tr>
+                            <th class="sorted ascending">Projects</th>
+                            <th class="">Project Type</th>
+                            <th class="">Project Start Date</th>
+                            <th class="">Project End Date</th>
+                            <th class="">Years Targeted</th>
+                            <th class=""># charts</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2016 Q3 Claims Validation Projects</td>
+                                <td>Claims Validation</td>
+                                <td>11/01/16</td>
+                                <td>12/05/18</td>
+                                <td>2014</td>
+                                <td>250</td>
+                            </tr>
+                            <tr>
+                                <td>Q4 Code Abstraction</td>
+                                <td>Claims Validation</td>
+                                <td>11/01/16</td>
+                                <td>12/05/18</td>
+                                <td>2016</td>
+                                <td>500</td>
+                            </tr>
+                            <tr>
+                                <td>2016 Q2 Claims Validation Projects</td>
+                                <td>Claims Validation</td>
+                                <td>11/01/16</td>
+                                <td>12/05/18</td>
+                                <td>2013</td>
+                                <td>400</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -95,6 +165,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/js/jqueryui-editable.min.js"></script>
 <script src="./public/js/vendor/sticky-kit.js"></script>
 <script src="./public/js/vendor/semantic.min.js"></script>
+<script src="./public/js/vendor/tablesort.js"></script>
 <script src="./public/js/main.js"></script>
 <script src="./public/js/vendor/pdfobject.js"></script>
 <script type="text/javascript">
@@ -102,6 +173,7 @@
         $('.main-content .toggle-btn').on('click', function() {
             $('.main-content').toggleClass('isOpen');
         });
+        $('.table-wrap table').tablesort()
     });
 </script>
 </body>
