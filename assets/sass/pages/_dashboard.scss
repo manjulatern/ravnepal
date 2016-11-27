@@ -1,5 +1,5 @@
 .dashboard-wrapper {
-  background: #2a2a2a;
+  background: #eee;
 
   .top-bar {
     background: #0cc2aa;
@@ -129,13 +129,6 @@
 
   .btn-action-wrap {
     margin-top: 40px;
-  }
-
-  .main-content {
-    background: #eee;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
-    transform: translate3d(0, 0, 0);
-    transition: transform .3s;
   }
 
   .title {
