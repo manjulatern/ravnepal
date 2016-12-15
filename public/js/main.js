@@ -86,4 +86,15 @@ $( function() {
         })
     ;
 
+
+    $('.comment-has-dropdown').click(function(e) {
+        e.stopPropagation();
+    });
+    $('.comment-has-dropdown').click(function() {
+        $('.comment-has-dropdown > div').addClass('dropdown-is-open').show();
+    });
+
+    $(document).click(function() {
+        $('.comment-has-dropdown > div').removeClass('dropdown-is-open').hide();
+    });
 } );

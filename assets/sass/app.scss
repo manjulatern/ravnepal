@@ -1,9 +1,7 @@
-
 @import "base/variables";
 @import "vendor/fonts";
 @import "base/normalize";
 @import "base/base";
-
 @import "pages/claim-validation";
 @import "pages/homepage-banner";
 @import "pages/dashboard";
@@ -23,4 +21,67 @@
   border-radius: 4px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.comment-has-dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  background-color: #FFF;
+  border-radius: 3px;
+  border: 1px solid #CCC;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin-top: 0.5rem;
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  min-width: 400px;
+}
+
+.dropdown-content .ui.form {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.dropdown-content .ui.form .field:nth-of-type(1) {
+  width: 311px;
+  float: left;
+  margin: 0;
+}
+
+.dropdown-content .ui.form .field:nth-of-type(2) {
+  float: left;
+  width: calc(100% - 311px);
+  margin: 0;
+  clear: none;
+}
+
+
+
+.dropdown-content .ui.form textarea {
+  font-size: 12px;
+  padding: 10px;
+}
+
+.dropdown-content .ui.button {
+  padding: 8px 10px;
+  font-size: 14px;
+  margin: 4px 10px;
+}
+
+.comment-list {
+  border-top: 1px solid #f0f0f0;
+  padding: 10px;
+  background: #f7f7f7;
+}
+
+.comment-list li:not(:nth-child(1)){
+  margin-top: 10px;
+}
+
+.dropdown-is-open > .dropdown-content {
+  display: block;
 }

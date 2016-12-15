@@ -285,10 +285,30 @@
             <label></label>
         </div>
     </td>
-    <td class="text-left">
-        <button type="button" class="icon show-message is-selected" title="Edit">
+    <td class="text-left comment-has-dropdown">
+        <button type="button" class="icon is-selected js-dropdown" title="Edit">
             <span class="icon-remark"></span>
         </button>
+        <div class="dropdown-content">
+            <div class="ui form">
+                <div class="field">
+                    <textarea rows="1" placeholder="Write a comment"></textarea>
+                </div>
+                <div class="field">
+                    <input class="ui green button" type="submit" value="Save">
+                </div>
+            </div>
+            <div class="comment-list">
+                <ul>
+                    <li>
+                        Hello this is a test comment
+                    </li>
+                    <li>
+                        Hello this is a test comment
+                    </li>
+                </ul>
+            </div>
+        </div>
     </td>
     <td class="text-left">
         <div class="ui floating labeled icon dropdown button is-selected">
